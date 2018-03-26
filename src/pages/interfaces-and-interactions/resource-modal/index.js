@@ -4,7 +4,7 @@ import Link from "gatsby-link";
 
 const IndexPage = ({ data }) => (
   <div>
-    <h1>Prompts</h1>
+    <h1>Resource Modal</h1>
     <PageList data={data} />
     <h1 id="promptguidelines">Prompt Guidelines</h1>
 
