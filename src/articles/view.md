@@ -1,7 +1,7 @@
 ---
 path: "/view"
 date: "2015-11-25"
-title: "Frontend Guide"
+title: "View"
 ---
 
 # View (Draft)

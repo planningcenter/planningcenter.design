@@ -1,7 +1,7 @@
 ---
 path: "/icon-conventions"
 date: "2015-11-18"
-title: "Frontend Guide"
+title: "Icon conventions"
 ---
 
 ### Help Indicators

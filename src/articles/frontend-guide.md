@@ -4,7 +4,6 @@ date: "2016-04-28"
 title: "Frontend Guide"
 ---
 
-# Frontend Guide
 A Guide to PCO Frontend Tools and Techniques
 
 1. [Interfaces](#interfaces)

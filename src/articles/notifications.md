@@ -1,7 +1,7 @@
 ---
 path: "/notifications"
 date: "2017-01-12"
-title: "Prompts"
+title: "Notifications"
 ---
 
 Notification Semantics
