@@ -10,7 +10,9 @@ html, .root {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
-    max-width: 560px;
+  }
+  .article {
+    max-width: 660px;
     margin: auto;
   }
   h1, .h1 {
