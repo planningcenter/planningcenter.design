@@ -1,13 +1,15 @@
 @import url("normalize.css");
 @import url("global.css");@import url("global.css");
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i');
 
 html, .root {
     font-size: 16px;
     line-height: 24px;
   }
   body, .article {
-    font-family: 'Nunito', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+
     font-size: 1rem;
     line-height: 1.5rem;
   }
