@@ -1,13 +1,25 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import { PageList } from "../../components/all_site_page_list";
+import Link from "gatsby-link";
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div>
     <h1>Prompts</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <PageList data={data} />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
+
+export const query = graphql`
+  query IndexQuery {
+    allSitePage {
+      edges {
+        node {
+          id
+          path
+        }
+      }
+    }
+  }
+`;

@@ -3,8 +3,7 @@ import { PageList } from "../components/all_site_page_list";
 
 const IndexPage = ({ data }) => (
   <div>
-    <h1>Hi people</h1>
-    <h2>Pages</h2>
+    <h1>Home</h1>
     <PageList data={data} />
   </div>
 );
