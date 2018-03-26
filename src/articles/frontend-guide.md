@@ -1,7 +1,7 @@
 ---
 path: "/frontend-guide"
-date: "2017-01-12"
-title: "Prompts"
+date: "2016-04-28"
+title: "Frontend Guide"
 ---
 
 # Frontend Guide
