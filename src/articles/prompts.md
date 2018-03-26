@@ -8,9 +8,9 @@ This is a framework for writing `prompt` copy.
 
 A user might uncover several prompts in the same session. Having those prompts feel like they were written by the same person is reassuring.
 
-Any of these recommendations may by disregarded for the sake clarity. "MUST" rules will rarely find a good reason to be broken.
+Any of these recommendations may be disregarded for the sake clarity. 
 
-In most cases, this framework will get you to a passable prompt.
+"MUST" rules will rarely find a good reason to be broken. In most cases, this framework will get you to a passable prompt.
 
 ## Anatomy
 

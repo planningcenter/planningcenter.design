@@ -1,0 +1,21 @@
+.Wrapper {}
+
+.Header {
+  background-color: black;
+  color: white;
+}
+.Header__content {
+  margin: 0 auto;
+  
+  @media(min-width: 700px) {
+    width: 1200px;
+  }
+}
+
+.Main {
+  margin: 0 auto;
+  
+  @media(min-width: 700px) {
+    width: 1200px;
+  }
+}
