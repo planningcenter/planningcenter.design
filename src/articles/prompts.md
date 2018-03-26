@@ -1,6 +1,6 @@
 ---
 path: "/prompts"
-date: "2016-22-08"
+date: "2016-08-22"
 title: "Prompts"
 ---
 

@@ -1,6 +1,6 @@
 ---
 path: "/resource-modal"
-date: "2015-14-08"
+date: "2015-08-14"
 title: "Resource Modal"
 ---
 
