@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import { PageList } from "../all_site_page_list";
 import { css, hover } from "glamor";
 
@@ -31,7 +32,7 @@ const Nav = ({ data }) => (
       width: 70,
     }}
   >
-    <a href="" style={{ fontSize: 32 }} className={svgWrapper}>
+    <Link to="/" style={{ fontSize: 32 }} className={svgWrapper}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -57,8 +58,8 @@ const Nav = ({ data }) => (
           />
         </g>
       </svg>
-    </a>
-    <a href="" style={{ fontSize: 28 }} className={svgWrapper}>
+    </Link>
+    <Link to="/interfaces" style={{ fontSize: 28 }} className={svgWrapper}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -93,8 +94,8 @@ const Nav = ({ data }) => (
           />
         </g>
       </svg>
-    </a>
-    <a href="" style={{ fontSize: 34 }} className={svgWrapper}>
+    </Link>
+    <Link to="/development" style={{ fontSize: 34 }} className={svgWrapper}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -143,10 +144,10 @@ const Nav = ({ data }) => (
           />
         </g>
       </svg>
-    </a>
-    <a
-      href=""
-      style={{ fontSize: 42, marginTop: "auto" }}
+    </Link>
+    <Link
+      to="/"
+      style={{fontSize: 42, marginTop: "auto" }}
       className={svgWrapper}
     >
       <svg
@@ -226,7 +227,7 @@ const Nav = ({ data }) => (
           </g>
         </g>
       </svg>
-    </a>
+    </Link>
   </nav>
 );
 
