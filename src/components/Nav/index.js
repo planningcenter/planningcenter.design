@@ -1,22 +1,25 @@
 import React from "react";
 import { PageList } from "../all_site_page_list";
+import { css, hover } from "glamor";
 
-let styles = {
-  svgWrapper: {
-    color: "rgba(255, 255, 255, 0.7)",
-    display: "block",
-    marginBottom: "1.5rem",
-    textAlign: "center",
-  },
+let svgWrapper = css({
+  color: "rgba(255, 255, 255, 0.7)",
+  display: "block",
+  marginBottom: "1.5rem",
+  textAlign: "center",
 
-  svg: {
-    display: "inline-block",
-    width: "1em",
-    height: "1em",
-    verticalAlign: "text-top",
-    fill: "currentColor",
+  ":hover": {
+    color: "white",
   },
-};
+});
+
+let svg = css({
+  display: "inline-block",
+  width: "1em",
+  height: "1em",
+  verticalAlign: "text-top",
+  fill: "currentColor",
+});
 
 const Nav = ({ data }) => (
   <nav
@@ -28,7 +31,7 @@ const Nav = ({ data }) => (
       width: 70,
     }}
   >
-    <a href="" style={{ ...styles.svgWrapper, fontSize: 32 }}>
+    <a href="" style={{ fontSize: 32 }} className={svgWrapper}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -37,7 +40,8 @@ const Nav = ({ data }) => (
         x="0px"
         y="0px"
         viewBox="0 0 24.1 22.9"
-        style={{ ...styles.svg, enableBackground: "new 0 0 24.1 22.9" }}
+        style={{ enableBackground: "new 0 0 24.1 22.9" }}
+        className={svg}
         xmlSpace="preserve"
       >
         <g id="Group_6" transform="translate(20.5 19.499)">
@@ -54,7 +58,7 @@ const Nav = ({ data }) => (
         </g>
       </svg>
     </a>
-    <a href="" style={{ ...styles.svgWrapper, fontSize: 28 }}>
+    <a href="" style={{ fontSize: 28 }} className={svgWrapper}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -63,7 +67,8 @@ const Nav = ({ data }) => (
         x="0px"
         y="0px"
         viewBox="0 0 24 22"
-        style={{ ...styles.svg, enableBackground: "new 0 0 24 22" }}
+        style={{ enableBackground: "new 0 0 24 22" }}
+        className={svg}
         xmlSpace="preserve"
       >
         <g id="Group_8" transform="translate(20.5 68.5)">
@@ -89,7 +94,7 @@ const Nav = ({ data }) => (
         </g>
       </svg>
     </a>
-    <a href="" style={{ ...styles.svgWrapper, fontSize: 34 }}>
+    <a href="" style={{ fontSize: 34 }} className={svgWrapper}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -98,7 +103,8 @@ const Nav = ({ data }) => (
         x="0px"
         y="0px"
         viewBox="0 0 19 24"
-        style={{ ...styles.svg, enableBackground: "new 0 0 19 24" }}
+        style={{ enableBackground: "new 0 0 19 24" }}
+        className={svg}
         xmlSpace="preserve"
       >
         <g id="Group_7" transform="translate(22.5 115.5)">
@@ -140,7 +146,8 @@ const Nav = ({ data }) => (
     </a>
     <a
       href=""
-      style={{ ...styles.svgWrapper, fontSize: 42, marginTop: "auto" }}
+      style={{ fontSize: 42, marginTop: "auto" }}
+      className={svgWrapper}
     >
       <svg
         version="1.1"
@@ -151,9 +158,9 @@ const Nav = ({ data }) => (
         y="0px"
         viewBox="0 0 34 49"
         style={{
-          ...styles.svg,
           enableBackground: "new 0 0 34 49",
         }}
+        className={svg}
         xmlSpace="preserve"
       >
         <g id="Group_2" transform="translate(1 716)">
