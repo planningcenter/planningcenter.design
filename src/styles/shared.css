@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url("global.css");@import url("global.css");
+@import url("global.css");
 
 html, .root {
     font-size: 16px;
@@ -18,12 +18,14 @@ html, .root {
     margin: auto;
   }
   h1, .h1 {
+    font-weight: 900;
     font-size: 3.625rem;
     line-height: 4.5rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
   }
   h2, .h2 {
+    font-weight: 900;
     font-size: 2.375rem;
     line-height: 3rem;
     margin-top: 1.5rem;
