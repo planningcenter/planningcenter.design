@@ -1,14 +1,10 @@
 import React from "react";
 import Link from "gatsby-link";
 
-export const PageList = ({ data }) => (
+export const ArticleNav = ({ data }) => (
   <ul>
-    {data.allSitePage.edges
-      .filter(
-        ({ node: { path } }) =>
-          !["/dev-404-page/", "/404/", , "/404.html"].includes(path)
-      )
-      .map(({ node: { id, path } }) => (
+    {data.allMarkdownRemark.edges
+      .map(({ node: { id, frontmatter: { path } } }) => (
         <li key={id}>
           <Link to={path}>{path}</Link>
         </li>

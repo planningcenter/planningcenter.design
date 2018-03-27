@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { PageList } from "../components/all_site_page_list";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import "../styles/shared.css";

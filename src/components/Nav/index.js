@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "gatsby-link";
-import { PageList } from "../all_site_page_list";
 import { css, hover } from "glamor";
 
 let svgWrapper = css({

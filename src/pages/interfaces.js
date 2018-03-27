@@ -1,10 +1,10 @@
 import React from "react";
-import { PageList } from "../components/all_site_page_list";
+import { ArticleNav } from "../components/Article_nav";
 
 const IndexPage = ({ data }) => (
   <div>
     <h1>Interfaces & Interactions</h1>
-    <PageList data={data} />
+    <ArticleNav data={data} />
   </div>
 );
 
@@ -12,11 +12,15 @@ export default IndexPage;
 
 export const query = graphql`
   query InterfacesQuery {
-    allSitePage {
+    allMarkdownRemark(filter: {frontmatter: {group: {eq: "interfaces"}}}) {
       edges {
         node {
           id
-          path
+          frontmatter {
+            title
+            path
+            group
+          }
         }
       }
     }

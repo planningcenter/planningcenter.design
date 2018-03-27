@@ -2,6 +2,7 @@
 path: "/notifications"
 date: "2017-01-12"
 title: "Notifications"
+group: "interfaces"
 ---
 
 We started discussing [Notification styling](https://pco.slack.com/archives/G57NVP762/p1512141746000351) in Slack. The feature will likely be resolved without Alerts but surfaced some inconsistencies in our Notification semantics.

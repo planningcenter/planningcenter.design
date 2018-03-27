@@ -2,6 +2,7 @@
 path: "/prompts"
 date: "2016-08-22"
 title: "Prompts"
+group: "interfaces"
 ---
 
 This is a framework for writing `prompt` copy.

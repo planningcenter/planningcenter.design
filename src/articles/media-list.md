@@ -2,6 +2,7 @@
 path: "/media-list"
 date: "2015-11-15"
 title: "Media list"
+group: "interfaces"
 ---
 
 ## List with mixed interactions
