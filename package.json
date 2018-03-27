@@ -7,9 +7,11 @@
     "gatsby": "^1.9.238",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-remark-prismjs": "^1.2.21",
     "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.37",
+    "gatsby-transformer-remark": "^1.7.38",
     "glamor": "^2.20.40",
+    "prismjs": "^1.13.0",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
