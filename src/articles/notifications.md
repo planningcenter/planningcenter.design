@@ -4,13 +4,13 @@ date: "2017-01-12"
 title: "Notifications"
 ---
 
-We started discussing [Notification styling](https://pco.slack.com/archives/G57NVP762/p1512141746000351) in Slack. The feature will likely be resolved without Alerts but surfaced some inconsistencies in our Notification semantics.
+We started discussing [Notification styling](https://pco.slack.com/archives/G57NVP762/p1512141746000351) in Slack. The feature will likely be resolved without Alerts, but surfaced some inconsistencies in our Notification semantics.
 
-Shane Armitage Shane and I see the categories of Notifications like this.
+Shane Armitage and I see the categories of Notifications like this.
 
 ## Notifications
 
-Notifications are used to surface issues, announcements, and confirmations in a way that does not block UI. Notifications or distinct from Alerts, and Prompts, which block UI. They have have various degrees of stickiness, based on context.
+Notifications are used to surface issues, announcements, and confirmations in a way that does not block UI. Notifications are distinct from Alerts and Prompts, which block UI. They have various degrees of stickiness, based on context.
 
 Here are the categories of Notifications we've identified.
 
@@ -20,8 +20,8 @@ This Notifications should sit above Topbar.
 
 * Degraded performance
 * App announcement
-* Braking API change
-* Ministry Brands acquisition
+* Breaking API change
+* Ministry Brands acquisition (😮)
 
 ### App
 

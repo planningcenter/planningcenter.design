@@ -27,8 +27,10 @@ const Nav = ({ data }) => (
       backgroundColor: "#2d5abb",
       display: "flex",
       flexDirection: "column",
+      left: 0,
       minHeight: "100%",
       paddingTop: "1.5em",
+      position: "fixed",
       width: 70,
     })}
   >
@@ -147,7 +149,7 @@ const Nav = ({ data }) => (
     </Link>
     <Link
       to="/"
-      style={{ fontSize: 42, marginTop: "auto" }}
+      style={{ fontSize: 42, marginBottom: "2.5rem", marginTop: "auto" }}
       className={svgWrapper}
     >
       <svg

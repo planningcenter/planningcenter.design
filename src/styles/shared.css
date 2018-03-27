@@ -1,5 +1,7 @@
 @import url("normalize.css");
 
+a { color: #2d5abb }
+
 html, .root {
   font-size: 16px;
   line-height: 24px;
@@ -8,11 +10,10 @@ body, .article {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
+  color: #242424;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
-.article { max-width: 660px }
 
 h1, h2 {  font-weight: 900 }
 h1, h2, h3, h4, h5 { margin-top: 1.5rem }

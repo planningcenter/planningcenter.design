@@ -31,7 +31,7 @@ This attribute takes a path as its value. When this element is clicked, Interfac
 
 ### `data-modal-close`
 
-This attribute takes no value and needs only be present. It should be added to the modal view/template. When this element is clicked, Interfaces hides the `.modal-layer` and returns scroll control to the `body`.
+This attribute takes no value and needs only to be present. It should be added to the modal view/template. When this element is clicked, Interfaces hides the `.modal-layer` and returns scroll control to the `body`.
 
 #### example
 
@@ -40,7 +40,6 @@ This attribute takes no value and needs only be present. It should be added to t
 ```
 
 [code](https://github.com/ministrycentered/interfaces/blob/master/app/assets/javascripts/interfaces/data_api.js.coffee#L37-L38)
-
 
 ## ModalView
 
@@ -53,7 +52,8 @@ The `ModalView` is an abstraction around HTML string content with a single metho
 It may be used apart from the Data-API like so:
 
 ```js
-var content = '<div class="modal"><button type="button" data-modal-close>close</button></div>';
+var content =
+  '<div class="modal"><button type="button" data-modal-close>close</button></div>';
 
 var modal = new INTERFACES.ModalView(content);
 
@@ -64,7 +64,7 @@ var modal = new INTERFACES.ModalView(content);
 
 #### `ModalView.show`
 
-An instance of `ModalView` may be show by calling `show`.
+An instance of `ModalView` may be shown by calling `show`.
 
 ```js
 var modal = new INTERFACES.ModalView(stringContent);
@@ -78,16 +78,15 @@ The `ModalView` constructor returns a reference to itself. So, you can chain the
 new INTERFACES.ModalView(stringContent).show();
 ```
 
-Invoking this method triggers the `modal:load` event on `document`. It's a good place in initialize any JavaScript plugins on the modal.
+Invoking this method triggers the `modal:load` event on `document`. It's a good place to initialize any JavaScript plugins on the modal.
 
 ```js
-$(document).on('modal:load', function () {
+$(document).on("modal:load", function() {
   // initialize all the things.
 });
 ```
 
 [code](https://github.com/ministrycentered/interfaces/blob/master/app/assets/javascripts/interfaces/modal.js.coffee#L8-L10)
-
 
 ## ModalLayer
 
@@ -120,7 +119,7 @@ The `modalLayer` object is a collection of functions used by `ModalView`s to pre
 * `empty`s `.modal-layer`
 * `append`s provided HTML string `content`
 
-*This is the method used by `data-modal-url`.*
+_This is the method used by `data-modal-url`._
 
 [code](https://github.com/ministrycentered/interfaces/blob/master/app/assets/javascripts/interfaces/modals.js.coffee#L20-L23)
 
