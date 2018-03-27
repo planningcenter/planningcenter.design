@@ -1,8 +1,7 @@
 ---
-path: "/icon-conventions"
+path: "/interfaces-and-interactions/icon-conventions"
 date: "2015-11-18"
 title: "Icon conventions"
-group: "interfaces"
 ---
 
 ### Help Indicators

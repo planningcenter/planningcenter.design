@@ -17,7 +17,9 @@ export default IndexPage;
 export const query = graphql`
   query InterfacesQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { group: { eq: "interfaces" } } }
+      filter: {
+        frontmatter: { path: { regex: "/interfaces-and-interactions/" } }
+      }
     ) {
       edges {
         node {
@@ -25,7 +27,6 @@ export const query = graphql`
           frontmatter {
             title
             path
-            group
           }
         }
       }

@@ -17,7 +17,9 @@ export default IndexPage;
 export const query = graphql`
   query DevelopmentQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { group: { eq: "development" } } }
+      filter: {
+        frontmatter: { path: { regex: "/frontend-development/" } }
+      }
     ) {
       edges {
         node {
@@ -25,7 +27,6 @@ export const query = graphql`
           frontmatter {
             title
             path
-            group
           }
         }
       }

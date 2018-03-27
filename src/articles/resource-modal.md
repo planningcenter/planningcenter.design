@@ -1,8 +1,7 @@
 ---
-path: "/resource-modal"
+path: "/interfaces-and-interactions/resource-modal"
 date: "2015-08-14"
 title: "Resource Modal"
-group: "interfaces"
 ---
 
 We talk a lot about "routable dialogs." The idea gathered a lot of mindshare but little traction and implementations have been unsuccessful.

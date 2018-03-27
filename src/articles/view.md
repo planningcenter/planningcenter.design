@@ -1,8 +1,7 @@
 ---
-path: "/view"
+path: "/interfaces-and-interactions/view"
 date: "2015-11-25"
 title: "View"
-group: "interfaces"
 ---
 
 # View (Draft)

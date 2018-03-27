@@ -1,8 +1,7 @@
 ---
-path: "/frontend-guide"
+path: "/frontend-development/frontend-guide"
 date: "2016-04-28"
 title: "Frontend Guide"
-group: "development"
 ---
 
 A Guide to PCO Frontend Tools and Techniques

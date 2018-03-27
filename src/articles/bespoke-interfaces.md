@@ -1,8 +1,7 @@
 ---
-path: "/bespoke-interfaces"
+path: "/interfaces-and-interactions/bespoke-interfaces"
 date: "2015-08-17"
 title: "Bespoke interfaces"
-group: "interfaces"
 ---
 
 ## Select vs Dropdown
