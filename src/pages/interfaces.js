@@ -7,7 +7,7 @@ import "../styles/page_main.css";
 const IndexPage = ({ data }) => (
   <main className="page-main">
     <Helmet title="Interfaces &amp; Interactions &ndash; Planning Center Design" />
-    <ArticleNav data={data} />
+    <ArticleNav data={data} title="Interfaces & Interactions" />
     <h1>Interfaces & Interactions</h1>
   </main>
 );

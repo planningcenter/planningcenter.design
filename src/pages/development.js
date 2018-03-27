@@ -7,7 +7,7 @@ import "../styles/page_main.css";
 const IndexPage = ({ data }) => (
   <main className="page-main">
     <Helmet title="Front End Development &ndash; Planning Center Design" />
-    <ArticleNav data={data} />
+    <ArticleNav data={data} title="Frontend Development" />
     <h1>Fontend Development</h1>
   </main>
 );
