@@ -34,6 +34,7 @@ const Nav = ({ data }) => (
   >
     <Link
       to="/"
+      exact
       title="Home"
       role="link"
       style={{ fontSize: 32 }}
