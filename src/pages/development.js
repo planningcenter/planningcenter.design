@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "glamor";
-import { ArticleNav } from "../components/Article_nav";
+import { ArticleNav } from "../components/article_nav";
 import Helmet from "react-helmet";
 import "../styles/page_main.css";
 
