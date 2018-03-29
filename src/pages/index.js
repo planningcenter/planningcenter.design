@@ -1,7 +1,7 @@
 import React from "react";
 
 const IndexPage = () => (
-  <div>
+  <div className="article">
     <h1>Home</h1>
   </div>
 );

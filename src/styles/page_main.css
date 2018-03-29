@@ -1,6 +1,8 @@
 .page-main {
   display: flex;
   min-height: 100%;
+  position: relative;
+  left: calc(260px + 3rem);
 }
 
 .article { padding-left: 3rem }

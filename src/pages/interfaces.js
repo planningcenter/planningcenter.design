@@ -8,7 +8,9 @@ const IndexPage = ({ data }) => (
   <main className="page-main">
     <Helmet title="Interfaces &amp; Interactions &ndash; Planning Center Design" />
     <ArticleNav data={data} title="Interfaces & Interactions" />
-    <h1>Interfaces & Interactions</h1>
+    <article className="article">
+      <h1>Interfaces & Interactions</h1>
+    </article>
   </main>
 );
 

@@ -7,37 +7,51 @@ export const ArticleNav = ({ data, title, category, ...props }) => (
     {...props}
     {...css({
       backgroundColor: "#f3f3f3",
-      marginRight: "3rem",
+      height: "100%",
+      left: 70,
       padding: 24,
+      position: "fixed",
+      top: 0,
       width: 260,
     })}
   >
-    <span
-      className="h4"
+    <h4
       style={{
         fontWeight: 600,
         color: "#484848",
         marginBottom: "1.25em",
+        marginTop: 24,
         display: "block",
       }}
     >
       {title}
-    </span>
+    </h4>
     <nav>
       <ul {...css({ listStyle: "none", margin: 0, padding: 0 })}>
-        {data.allMarkdownRemark.edges.filter((el) => category ? el.node.frontmatter.path.includes(category) : el).map(
-          ({ node: { id, frontmatter: { path, title } } }) => (
-            <li key={id} style={{paddingTop: ".25em", paddingBottom: ".25em"}}>
+        {data.allMarkdownRemark.edges
+          .filter(
+            el => (category ? el.node.frontmatter.path.includes(category) : el)
+          )
+          .map(({ node: { id, frontmatter: { path, title } } }) => (
+            <li
+              key={id}
+              style={{ paddingTop: ".25em", paddingBottom: ".25em" }}
+            >
               <Link
                 to={path}
-                {...css({ color: "#404040", textDecoration: "none", lineHeight: "1.5em", display: "inline-block", width: "100%" })}
+                {...css({
+                  color: "#404040",
+                  textDecoration: "none",
+                  lineHeight: "1.5em",
+                  display: "inline-block",
+                  width: "100%",
+                })}
                 activeStyle={{ fontWeight: 800 }}
               >
                 {title}
               </Link>
             </li>
-          )
-        )}
+          ))}
       </ul>
     </nav>
   </div>

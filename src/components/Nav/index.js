@@ -147,10 +147,16 @@ const Nav = ({ data }) => (
         </g>
       </svg>
     </Link>
-    <Link
-      to="/"
-      style={{ fontSize: 42, marginBottom: "2.5rem", marginTop: "auto" }}
-      className={svgWrapper}
+    <span
+      {...css({
+        color: "rgba(255, 255, 255, 0.5)",
+        display: "block",
+        marginBottom: "1.5rem",
+        textAlign: "center",
+        fontSize: 42,
+        marginBottom: "2.5rem",
+        marginTop: "auto",
+      })}
     >
       <svg
         version="1.1"
@@ -221,7 +227,7 @@ const Nav = ({ data }) => (
           </g>
         </g>
       </svg>
-    </Link>
+    </span>
   </nav>
 );
 
