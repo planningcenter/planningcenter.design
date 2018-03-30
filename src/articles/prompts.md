@@ -8,7 +8,7 @@ This is a framework for writing `prompt` copy.
 
 A user might uncover several prompts in the same session. Having those prompts feel like they were written by the same person is reassuring.
 
-Any of these recommendations may be disregarded for the sake clarity. 
+Any of these recommendations may be disregarded for the sake clarity.
 
 "MUST" rules will rarely find a good reason to be broken. In most cases, this framework will get you to a passable prompt.
 
@@ -79,7 +79,6 @@ Any of these recommendations may be disregarded for the sake clarity.
 
 > "Generating Lists can take up to 10 minutes. Your list might still be processing. If you cancel now, you can try again later."
 
-
 #### Bad
 
 > "You're about to take an action that cannot be undone."
@@ -144,7 +143,6 @@ Any of these recommendations may be disregarded for the sake clarity.
 * CREATE = `GREEN`
 * GENERIC, NON-GENERATIVE, NON-DESTRUCTIVE ACTION = `BLUE/GRAY`
 
-
 ## Destroy Record
 
 A user shouldn't be able to easily delete data. Put some speed bumps in place.
@@ -155,11 +153,9 @@ Your first line of defense is going to be the Action button. It should look pret
 
 The button should start with "Delete", "Remove", or the like. It should also be `red`.
 
-```
-+----------------+
-|  Delete Cathy  |    <- It's red.
-+----------------+
-```
+<div class="demo" style="text-align: center">
+  <button class="destroy-btn btn"> Delete Cathy </button>
+</div>
 
 #### Prompt
 
@@ -170,19 +166,17 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 * Cancel Button: "Cancel"
 * Continue Button: "Yes, ..."
 
-```
-+-----------------------------------------------------------------+
-|                          Are you sure?                          |
-+-----------------------------------------------------------------+
-|                                                                 |
-|  Deleting Cathy will remove her from all Planning Center apps.  |
-|     Her activity will be lost. You cannot un-delete Cathy.      |
-|                                                                 |
-|                               +---------------------+           |
-|              Cancel           |  Yes, Delete Cathy  |           |
-|                               +---------------------+           |
-+-----------------------------------------------------------------+
-```
+<div class="demo prompt">
+  <h1>Delete Cathy?</h1>
+  <p>Deleting Cathy will remove her from all Planning Center apps. Her activity
+  will be lost. You cannot un-delete Cathy.</p>
+
+  <div class="buttons">
+    <button class="cancel-btn btn"> Cancel </button>
+    <button class="destroy-btn btn"> Yes, Delete Cathy </button>
+  </div>
+
+</div>
 
 ##### Iteration 2
 
@@ -193,20 +187,16 @@ The button should start with "Delete", "Remove", or the like. It should also be 
 
 This is harder for the user to read but might spare some embarrassing gender mishaps.
 
-```
-+-----------------------------------------------------------------+
-|                          Delete Cathy?                          |
-+-----------------------------------------------------------------+
-|                                                                 |
-|         Deleting this person will remove them from all          |
-|    Planning Center apps. Their profile and activity will be     |
-|          deleted immediately. This can't be undone.             |
-|                                                                 |
-|                              +---------------------+            |
-|                 No           |  Yes, Delete Cathy  |            |
-|                              +---------------------+            |
-+-----------------------------------------------------------------+
-```
+<div class="demo prompt">
+  <h1>Are you sure?</h1>
+  <p>Deleting this person will remove them from all Planning Center apps. Their
+  profile and activity will be deleted immediately. This can't be undone.</p>
+
+  <div class="buttons">
+    <button class="cancel-btn btn"> No </button>
+    <button class="destroy-btn btn"> Yes, Delete Cathy </button>
+  </div>
+</div>
 
 ##### Iteration 3
 
@@ -217,20 +207,16 @@ This is harder for the user to read but might spare some embarrassing gender mis
 
 If the originating button clearly says what you'll be deleting, I'd probably land on this. Generic but contextually simple.
 
-```
-+-----------------------------------------------------------------+
-|                          Are you sure?                          |
-+-----------------------------------------------------------------+
-|                                                                 |
-|         Deleting this person will remove them from all          |
-|    Planning Center apps. Their profile and activity will be     |
-|           delted immediately. This can't be undone.             |
-|                                                                 |
-|                               +---------------------+           |
-|              Cancel           |  Yes, Delete Cathy  |           |
-|                               +---------------------+           |
-+-----------------------------------------------------------------+
-```
+<div class="demo prompt">
+  <h1>Are you sure?</h1>
+  <p>Deleting this person will remove them from all Planning Center apps. Their
+  profile and activity will be deleted immediately. This can't be undone.</p>
+
+  <div class="buttons">
+    <button class="cancel-btn btn"> Cancel </button>
+    <button class="destroy-btn btn"> Yes, Delete Cathy </button>
+  </div>
+</div>
 
 ## Discard State
 
@@ -242,35 +228,28 @@ The action button should look pretty safe. They shouldn't be afraid to back out 
 
 The button read "Cancel", "Go back", "Leave", etc. It should NOT be `red`. `gray` or `no color` are appropriate.
 
-```
-+----------+    +----------------+
-|  Cancel  |    |  Registration  |
-+----------+    +----------------+
-      ^                  ^
-      |                  |
- (gray/none)          (green)
-```
+<div class="demo" style="text-align: center">
+  <button class="cancel-btn btn"> Cancel </button>
+  <button class="create-btn btn"> Register </button>
+</div>
 
 #### Prompt
 
-This prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with many options. The way out is to be explicit and *really* force the "yes"/"no" response.
+This prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with many options. The way out is to be explicit and _really_ force the "yes"/"no" response.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
 
-```
-+----------------------------------------------------------------+
-|                        Cancel Registration?                    |
-+----------------------------------------------------------------+
-|                                                                |
-|            You haven't completed your registration.            |
-|         If you cancel now, your progress will be lost.         |
-|                                                                |
-|                               +----------------------------+   |
-|      No, keep going           |  Yes, cancel registration  |   |
-|                               +----------------------------+   |
-+----------------------------------------------------------------+
-```
+<div class="demo prompt">
+  <h1>Cancel Registration?</h1>
+  <p>You haven't completed your registration. If you cancel now, your progress
+  will be lost.</p>
+
+  <div class="buttons">
+    <button class="cancel-btn btn"> No, keep going </button>
+    <button class="destroy-btn btn"> Yes, cancel registration </button>
+  </div>
+</div>
 
 ## Disrupt Controlled Process
 
@@ -282,34 +261,27 @@ The Action Button color is pretty contextual. I'd guess `yellow` in the majority
 
 The button should read as active: "Stop", "Pause", "Interrupt", etc. "Cancel" is too passive and should be reserved for cancelling your request to interrupt the process.
 
-```
-+------------------+
-|  Stop importing  |    <- dealer's choice on color
-+------------------+
-```
+<div class="demo" style="text-align: center">
+  <button class="quiet-destroy-btn btn"> Stop importing </button>
+</div>
 
 #### Prompt
 
-So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* force the "yes"/"no" response.
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and _really_ force the "yes"/"no" response.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
 
-```
-+-------------------------------------------------------------+
-|                       Stop CSV import?                      |
-+-------------------------------------------------------------+
-|                                                             |
-|            Your CSV import has not completed.               |
-|   If you stop the import, no users will have been added.    |
-|          You may safely import this CSV later.              |
-|                                                             |
-|                               +-------------------------+   |
-|      No, keep importing       |  Yes, stop this import  |   |
-|                               +-------------------------+   |
-+-------------------------------------------------------------+
-```
+<div class="demo prompt">
+  <h1>Stop CSV Import?</h1>
+  <p>Your CSV import has not completed. If you stop the import, no users will
+    have been added. You may safely import this CSV later.</p>
 
+  <div class="buttons">
+    <button class="cancel-btn btn"> No, keep importing </button>
+    <button class="quiet-destroy-btn btn"> Yes, stop this import </button>
+  </div>
+</div>
 
 ## Disrupt Uncontrolled Process
 
@@ -319,33 +291,28 @@ An uncontrolled process is one that can't be cleanly stopped, rolled back, or re
 
 The button should be active and somewhat ominous. "Halt", "Stop", "Pause", "Interrupt", etc. "Cancel" is too passive and should be reserved for cancelling your request to interrupt the process.
 
-```
-+----------------+
-|  Stop mailing  |    <- red button
-+----------------+
-```
+<div class="demo" style="text-align: center">
+  <button class="destroy-btn btn"> Stop mailing </button>
+</div>
 
 #### Prompt
 
-So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and *really* force the "yes"/"no" response.
+So the prompt is where you can find yourself in the "cancel my cancel" pit. Unfortunately, that doesn't leave us with a lot of options. The way out is to be explicit and _really_ force the "yes"/"no" response.
 
 * Cancel Button: "No, ..." (gray/no-color)
 * Continue Button: "Yes, ..." (red)
 
-```
-+-------------------------------------------------------------------+
-|                           Stop mailing?                           |
-+-------------------------------------------------------------------+
-|                                                                   |
-|     This email is being sent to 100 people. If you stop now,      |
-|   a portion of those people may have already recieved an email.   |
-|       This mailing cannot be picked up where it left off.         |
-|                                                                   |
-|                                  +---------------------+          |
-|       No, continue mailing       |  Yes, stop mailing  |          |
-|                                  +---------------------+          |
-+-------------------------------------------------------------------+
-```
+<div class="demo prompt">
+  <h1>Stop mailing?</h1>
+  <p>This email is being sent to 100 people. If you stop now, a portion of those
+  people may have already recieved an email. This mailing cannot be picked up
+  where it left off.</p>
+
+  <div class="buttons">
+    <button class="cancel-btn btn">No, continue mailing</button>
+    <button class="destroy-btn btn">Yes, stop mailing</button>
+  </div>
+</div>
 
 ## Don't use stock icons
 

@@ -1,0 +1,22 @@
+@import url("button.css");
+@import url("media.css");
+@import url("prompt.css");
+
+.demo {
+  background-color: white;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ebebeb;
+  margin: .5em 0 1.5rem 0;
+  padding: 1.5rem;
+}
+
+.demo .buttons { text-align: right }
+
+pre[class*="language-"] { border-radius: 4px }
+
+.demo + .gatsby-highlight pre[class*="language-"] {
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #ebebeb;
+  border-top: 0;
+  margin-top: 0;
+}

@@ -26,11 +26,12 @@ An "action" is something that's performed _on the media_.
 
 This item presents the name of the Media ("viewable") and one Services action, "edit".
 
-    +--------------------------------------+
-    |                              +-----+ |
-    |  Media                       |  ✎  | |
-    |                              +-----+ |
-    +--------------------------------------+
+<div class="demo media">
+  <div class="media__main">Media</div>
+  <div class="media__sub">
+    <button class="sm-btn action-btn btn">edit</button>
+  </div>
+</div>
 
 ### Viewable Media with many obscured options
 
@@ -38,26 +39,32 @@ This is an example of the same Media with more actions. This might be what is se
 
 ##### options collapsed
 
-    +--------------------------------------+
-    |                              +-----+ |
-    |  Media Link                  | ... | |
-    |                              +-----+ |
-    +--------------------------------------+
+<div class="demo media">
+  <div class="media__main">Media Link</div>
+  <div class="media__sub">
+    <button class="sm-btn action-btn btn">&hellip;</button>
+  </div>
+</div>
 
 ##### options expanded
 
-    +--------------------------------------+
-    |                  +-----+-----+-----+ |
-    |  Media Link      |  ⃔   |  ✎  |  ⨉  | |
-    |                  +-----+-----+-----+ |
-    +--------------------------------------+
+<div class="demo media">
+  <div class="media__main">Media</div>
+  <div class="media__sub">
+    <button class="sm-btn action-btn btn">back</button>
+    <button class="sm-btn action-btn btn">edit</button>
+    <button class="sm-btn quiet-destroy-btn btn">remove</button>
+  </div>
+</div>
 
 <h3 style="line-height: 1.2; margin-bottom: 0.5em; margin-top: 1.5em;">Viewable Media with many obscured options and a single common option</h3>
 
 This is like the example before but it always presents the "90% action". This prevents the need to expand the action-list for the 90% case.
 
-    +--------------------------------------+
-    |                        +-----+-----+ |
-    |  Media Link            |  ✎  | ... | |
-    |                        +-----+-----+ |
-    +--------------------------------------+
+<div class="demo media">
+  <div class="media__main">Media</div>
+  <div class="media__sub">
+    <button class="sm-btn action-btn btn">edit</button>
+    <button class="sm-btn action-btn btn">&hellip;</button>
+  </div>
+</div>

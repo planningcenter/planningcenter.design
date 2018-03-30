@@ -1,0 +1,6 @@
+.demo.media {
+  display: flex;
+}
+
+.demo .media__main { flex: 1 }
+.demo .media__sub {}

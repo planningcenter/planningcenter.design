@@ -1,0 +1,113 @@
+.demo .btn {
+  align-items: center;
+  background-color: #fff;
+  border-color: #c7c7c7;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  color: #525150;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 2.2;
+  padding: 0 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.demo .btn:hover {
+  background-color: #f0f0f0;
+  color: #525150;
+}
+.demo .btn[disabled], .demo .btn[disabled]:hover {
+  background: #c7c7c7;
+  border-color: #cecdcb;
+  box-shadow: none;
+  color: #e8e8e8;
+  cursor: not-allowed;
+}
+.demo .btn:focus {
+  box-shadow: 0 0 1px 2px rgba(177, 235, 144, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.demo .btn[class^=quiet-], .demo .btn[class*=quiet-] {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+}
+.demo .btn[class^=quiet-]:hover, .demo .btn[class*=quiet-]:hover {
+  background-color: transparent;
+}
+.demo .btn[class^=quiet-][disabled], .demo .btn[class*=quiet-][disabled], .demo .btn[class^=quiet-][disabled]:hover, .demo .btn[class*=quiet-][disabled]:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: #e8e8e8;
+}
+.demo .btn.quiet-btn {
+  border-color: #c7c7c7;
+}
+.demo .btn.quiet-btn:hover {
+  box-shadow: inset 0 0 0 3px rgba(82, 81, 80, 0.1);
+  color: #525150;
+}
+.demo .btn.text-btn, .demo .btn.cancel-btn {
+  background: transparent;
+  border-color: transparent;
+}
+.demo .btn.text-btn:hover, .demo .btn.cancel-btn:hover {
+  border-color: #c7c7c7;
+  box-shadow: inset 0 0 0 3px rgba(146, 145, 143, 0.2);
+}
+.demo .btn.lg-btn {
+  font-size: 1rem;
+}
+.demo .btn {
+  font-size: 0.875rem;
+}
+.demo .btn.sm-btn {
+  font-size: 0.75rem;
+  line-height: 2.1;
+}
+.demo .btn.xs-btn {
+  font-size: 0.6875rem;
+  line-height: 1.8;
+  padding: 0 0.45rem;
+  border-radius: 2px;
+}
+.demo .btn .icon, .demo .btn .symbol {
+  margin-right: 0.25rem;
+}
+.demo .create-btn {
+  background-color: #7dc755;
+  border-color: #5fa837;
+  color: #FFFFFF;
+}
+.demo .create-btn:hover {
+  background-color: #6cbf3f;
+  color: #fff;
+}
+.demo .quiet-create-btn {
+  border-color: #5fa837;
+  color: #5fa837;
+}
+.demo .quiet-create-btn:hover {
+  box-shadow: inset 0 0 0 3px rgba(95, 168, 55, 0.2);
+  color: #5fa837;
+}
+.demo .destroy-btn {
+  background-color: #f5775d;
+  border-color: #f14723;
+  color: #fff;
+}
+.demo .destroy-btn:hover {
+  background-color: #f4674a;
+  color: #fff;
+}
+.demo .quiet-destroy-btn {
+  border-color: #f46345;
+  color: #f46345;
+}
+.demo .quiet-destroy-btn:hover {
+  box-shadow: inset 0 0 0 3px rgba(244, 99, 69, 0.2);
+  color: #f46345;
+}

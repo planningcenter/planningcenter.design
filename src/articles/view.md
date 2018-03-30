@@ -4,8 +4,6 @@ date: "2015-11-25"
 title: "View"
 ---
 
-# View (Draft)
-
 ## What's a view?
 
 The idea of a view should map pretty well to Rails view. Where a layout controls the shared UI of your application, views are the single pages set inside them.

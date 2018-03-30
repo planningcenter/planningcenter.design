@@ -25,11 +25,13 @@ This policy applies strictly to modals that show a resource.
 ## Proposal
 
 ### Navigation behavior
+
 * Resource Modal writes new URL to `resource_path(resource)` via `pushState`
 * `Back` dismissed the Modal (default behavior with `pushState`)
 * `dismiss/cancel/close` delegate to `window.history.back()`
 
 ### Pasted-link behavior
+
 * Link is a Rails resource path. Routes directly to resource `show/edit` page
 
 ## Implementation
@@ -44,7 +46,7 @@ This is a very generalized implementation:
 class ApplicationController < ActionController::Base
   before_action :set_variant
 
-  layout proc { false if request.xhr? } 
+  layout proc { false if request.xhr? }
 
   def set_variant
     request.variant = :modal if params[:variant] == "modal"
@@ -76,8 +78,9 @@ show.html+modal.erb
 _resource_show.html.erb
 ```
 
-**_resource_show.html.erb**
-```erb
+**\_resource_show.html.erb**
+
+```html
 <div class="resource">
   <div class="resource-name">
     <%= @resource.name %>
@@ -89,7 +92,8 @@ _resource_show.html.erb
 ```
 
 **show.html.erb**
-```erb
+
+```html
 <h2 class="page-title"><%= @resource.name %></h2>
 <div class="page-content">
   <%= render "_resource_show" %>
@@ -99,14 +103,15 @@ _resource_show.html.erb
 ```
 
 **show.html+modal.erb**
-```erb
+
+```html
 <!-- important that layout is not sent -->
 <div class="modal">
   <header class="modal-header">
     <%= @resource.name %>
   </header>
 
-  <div> class="modal-content">
+  <div class="modal-content">
     <%= render "_resource_show" %>
   </div>
 
@@ -117,6 +122,7 @@ _resource_show.html.erb
 ### Example
 
 ##### index view
+
 ```
 +--------------------------------------------------+
 |             instagram.com/chantastic             |
@@ -140,7 +146,9 @@ _resource_show.html.erb
 ```
 
 ##### modal-show
+
 Seen when a user navigates to a Resource Modal.
+
 ```
 +--------------------------------------------------+
 |      instagram.com/chantastic/p/0N8ndhMsaS       |
@@ -164,7 +172,9 @@ Seen when a user navigates to a Resource Modal.
 ```
 
 ##### show
+
 Seen when a user arrives at a resource via link.
+
 ```
 +--------------------------------------------------+
 |      instagram.com/chantastic/p/0N8ndhMsaS       |
@@ -194,25 +204,33 @@ Each variant has different standard actions.
 
 **edit.html.erb**
 
-```
-+-----------------------+   +----------+
-|  see all {resource}s  |   |   save   |
-+-----------------------+   +----------+
-
-* see all {resource}s  ->  GET   /resource
-* save                 ->  PATCH /resource/:id
-```
+<div class="demo" style="text-align: center">
+  <div style="align-items: center; display: flex; justify-content: center;">
+    <div style="text-align: right">
+      <button class="btn" style="margin-bottom: 1rem">see all resources</button><br/>
+      <button class="create-btn btn">save</button>
+    </div>
+    <div style="text-align: left; line-height: 2; padding-left: 1rem;">
+      <code style="display: inline-block; margin-bottom: 2rem"> -> GET /resource</code><br/>
+      <code> -> PATCH /resource/:id</code>
+    </div>
+  </div>
+</div>
 
 **edit.html+modal.erb**
 
-```
-+----------+   +----------+
-|  cancel  |   |   save   |
-+----------+   +----------+
-
-* cancel  ->  `window.history.back`
-* save    ->  PATCH /resource/:id
-```
+<div class="demo" style="text-align: center">
+  <div style="align-items: center; display: flex; justify-content: center;">
+    <div style="text-align: right">
+      <button class="quiet-btn btn" style="margin-bottom: 1rem">cancel</button><br/>
+      <button class="create-btn btn">save</button>
+    </div>
+    <div style="text-align: left; line-height: 2; padding-left: 1rem;">
+      <code style="display: inline-block; margin-bottom: 2rem"> -> window.history.back</code><br/>
+      <code> -> PATCH /resource/:id</code>
+    </div>
+  </div>
+</div>
 
 ## Tools
 
@@ -242,7 +260,7 @@ end
 
 They've created a `+modal` application layout. Rails-magic&reg; uses this layout by default for `+modal` variants. Soops-cool:
 
-```erb
+```ruby
 <%= yield %>
 ```
 
