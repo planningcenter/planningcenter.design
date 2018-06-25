@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import Nav from "../components/Nav";
-import "../styles/shared.css";
-import "../styles/prism-ghcolors.css";
+import Nav from "../Nav";
+import "../../styles/shared.css";
+import "../../styles/prism-ghcolors.css";
 
 const TemplateWrapper = ({ children }) => (
   <div style={{ display: "flex", minHeight: "100vh", paddingLeft: 70 }}>
@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Nav />
-    {children()}
+    {children}
   </div>
 );
 

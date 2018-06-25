@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
-import { css, hover } from "glamor";
+import { css } from "glamor";
 
 let svgWrapper = css({
   color: "rgba(255, 255, 255, 0.5)",
@@ -151,7 +151,6 @@ const Nav = ({ data }) => (
       {...css({
         color: "rgba(255, 255, 255, 0.5)",
         display: "block",
-        marginBottom: "1.5rem",
         textAlign: "center",
         fontSize: 42,
         marginBottom: "2.5rem",

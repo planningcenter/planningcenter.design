@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layouts";
 import Helmet from "react-helmet";
 import { ArticleNav } from "../components/article_nav";
 
@@ -9,18 +11,20 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <main className="page-main">
-      <Helmet title={`${frontmatter.title} — Planning Center Design`} />
-      <ArticleNav
-        data={data}
-        title="Interfaces & Interactions"
-        category={rest.location.pathname.split("/")[1]}
-      />
-      <article className="article">
-        <h1>{frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </article>
-    </main>
+    <Layout>
+      <main className="page-main">
+        <Helmet title={`${frontmatter.title} — Planning Center Design`} />
+        <ArticleNav
+          data={data}
+          title="Interfaces & Interactions"
+          category={rest.location.pathname.split("/")[1]}
+        />
+        <article className="article">
+          <h1>{frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </article>
+      </main>
+    </Layout>
   );
 }
 
