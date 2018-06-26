@@ -186,33 +186,6 @@ const IndexPage = () => (
             {
               name: "people",
               color: "#4278e3",
-              icons: (
-                <InProgressCell data-label="icons">
-                  <StyledList>
-                    <li>
-                      <code>
-                        <a
-                          href="https://github.com/planningcenter/icons"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          @planningcenter/icons@2
-                        </a>
-                      </code>
-                    </li>
-                    {outdatedIconSets
-                      .filter(
-                        set => set !== "interfaces_icons",
-                        "@planning-center/icons@1"
-                      )
-                      .map(lib => (
-                        <li>
-                          <code>{lib}</code>
-                        </li>
-                      ))}
-                  </StyledList>
-                </InProgressCell>
-              ),
               emails: (
                 <InProgressCell data-label="emails">
                   <StyledList>
@@ -308,6 +281,19 @@ const IndexPage = () => (
                   <a href="https://github.com/rails/webpacker">
                     <code>rails/webpacker</code>
                   </a>
+                </td>
+              ),
+              icons: (
+                <td data-label="icons">
+                  <code>
+                    <a
+                      href="https://github.com/planningcenter/icons"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @planningcenter/icons@2
+                    </a>
+                  </code>
                 </td>
               ),
               emails: (
