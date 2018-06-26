@@ -4,6 +4,39 @@ import appsSprite from "@planningcenter/icons/sprites/apps.svg";
 import Symbol from "@planningcenter/symbol";
 import "table.css";
 
+function OutdatedCell(props) {
+  return (
+    <Cell style={{ backgroundColor: "#de1920", color: "white" }} {...props} />
+  );
+}
+
+function InProgressCell(props) {
+  return <Cell style={{ backgroundColor: "#fff97b" }} {...props} />;
+}
+
+function Cell({ component: Component = "td", ...props }) {
+  return <Component {...props} />;
+}
+
+function StyledList({ component: Component = "ul", ...props }) {
+  return (
+    <Component
+      style={{
+        paddingLeft: "1em",
+        marginBottom: 0,
+        textAlign: "left",
+      }}
+      {...props}
+    />
+  );
+}
+
+let outdatedIconSets = [
+  "@planning-center/icons@1",
+  "interfaces_icons",
+  "IcoMoon iconfont",
+];
+
 const IndexPage = () => (
   <Layout>
     <style>{`.symbol { font-size: 2rem}`}</style>
@@ -26,45 +59,19 @@ const IndexPage = () => (
               name: "accounts",
               color: "#3B80C6",
               icons: (
-                <td
-                  data-label="icons"
-                  style={{ backgroundColor: "#de1920", color: "white" }}
-                >
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
-                    <li>
-                      <code>@planningcenter/icons@1</code>
-                    </li>
-                    <li>
-                      <code>interfaces_icons</code>
-                    </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td data-label="favicon">
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
+                <OutdatedCell data-label="icons">
+                  <StyledList>
+                    {outdatedIconSets.map(lib => (
+                      <li>
+                        <code>{lib}</code>
+                      </li>
+                    ))}
+                  </StyledList>
+                </OutdatedCell>
               ),
               emails: (
-                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="emails">
+                  <StyledList>
                     <li>
                       <a href="https://github.com/ministrycentered/pco-communication">
                         <code>pco-communication@2</code>
@@ -72,30 +79,21 @@ const IndexPage = () => (
                     </li>
 
                     <li>app-specific</li>
-                  </ul>
-                </td>
+                  </StyledList>
+                </InProgressCell>
               ),
               bundler: (
-                <td
-                  data-label="bundler"
-                  style={{ backgroundColor: "#de1920", color: "white" }}
-                >
+                <OutdatedCell data-label="bundler">
                   <code>sprockets-es6-amd</code>
-                </td>
+                </OutdatedCell>
               ),
             },
             {
               name: "check-ins",
               color: "#876096",
               icons: (
-                <td data-label="icons" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="icons">
+                  <StyledList>
                     <li>
                       <code>
                         <a
@@ -103,38 +101,21 @@ const IndexPage = () => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          @planning-center/icons@2
+                          @planningcenter/icons@2
                         </a>
                       </code>
                     </li>
-                    <li>
-                      <code>@planningcenter/icons@1</code>
-                    </li>
-                    <li>
-                      <code>interfaces_icons</code>
-                    </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td data-label="favicon">
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
+                    {outdatedIconSets.map(lib => (
+                      <li>
+                        <code>{lib}</code>
+                      </li>
+                    ))}
+                  </StyledList>
+                </InProgressCell>
               ),
               emails: (
-                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="emails">
+                  <StyledList>
                     <li>
                       <a href="https://github.com/ministrycentered/pco-communication">
                         <code>pco-communication@2</code>
@@ -142,29 +123,16 @@ const IndexPage = () => (
                     </li>
 
                     <li>app-specific</li>
-                  </ul>
-                </td>
-              ),
-              bundler: (
-                <td data-label="bundler">
-                  <a href="https://github.com/rails/webpacker">
-                    <code>rails/webpacker</code>
-                  </a>
-                </td>
+                  </StyledList>
+                </InProgressCell>
               ),
             },
             {
               name: "groups",
               color: "#F4C551",
               icons: (
-                <td data-label="icons" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="icons">
+                  <StyledList>
                     <li>
                       <code>
                         <a
@@ -172,53 +140,27 @@ const IndexPage = () => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          @planning-center/icons@2
+                          @planningcenter/icons@2
                         </a>
                       </code>
                     </li>
-                    <li>
-                      <code>@planningcenter/icons@1</code>
-                    </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td>
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
-              ),
-              emails: (
-                <td>
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>pco-communication@2</code>
-                  </a>
-                </td>
-              ),
-              bundler: (
-                <td data-label="bundler">
-                  <a href="https://github.com/rails/webpacker">
-                    <code>rails/webpacker</code>
-                  </a>
-                </td>
+                    {outdatedIconSets
+                      .filter(set => set !== "interfaces_icons")
+                      .map(lib => (
+                        <li>
+                          <code>{lib}</code>
+                        </li>
+                      ))}
+                  </StyledList>
+                </InProgressCell>
               ),
             },
             {
               name: "groups",
               color: "#FB7642",
               icons: (
-                <td data-label="icons" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="icons">
+                  <StyledList>
                     <li>
                       <code>
                         <a
@@ -226,53 +168,27 @@ const IndexPage = () => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          @planning-center/icons@2
+                          @planningcenter/icons@2
                         </a>
                       </code>
                     </li>
-                    <li>
-                      <code>@planningcenter/icons@1</code>
-                    </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td>
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
-              ),
-              emails: (
-                <td>
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>pco-communication@2</code>
-                  </a>
-                </td>
-              ),
-              bundler: (
-                <td data-label="bundler">
-                  <a href="https://github.com/rails/webpacker">
-                    <code>rails/webpacker</code>
-                  </a>
-                </td>
+                    {outdatedIconSets
+                      .filter(set => set !== "interfaces_icons")
+                      .map(lib => (
+                        <li>
+                          <code>{lib}</code>
+                        </li>
+                      ))}
+                  </StyledList>
+                </InProgressCell>
               ),
             },
             {
               name: "people",
               color: "#4278e3",
               icons: (
-                <td data-label="icons" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="icons">
+                  <StyledList>
                     <li>
                       <code>
                         <a
@@ -280,32 +196,26 @@ const IndexPage = () => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          @planning-center/icons@2
+                          @planningcenter/icons@2
                         </a>
                       </code>
                     </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td data-labels="favicon">
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
+                    {outdatedIconSets
+                      .filter(
+                        set => set !== "interfaces_icons",
+                        "@planning-center/icons@1"
+                      )
+                      .map(lib => (
+                        <li>
+                          <code>{lib}</code>
+                        </li>
+                      ))}
+                  </StyledList>
+                </InProgressCell>
               ),
               emails: (
-                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="emails">
+                  <StyledList>
                     <li>
                       <a href="https://github.com/ministrycentered/pco-communication">
                         <code>pco-communication@2</code>
@@ -313,81 +223,39 @@ const IndexPage = () => (
                     </li>
 
                     <li>app-specific</li>
-                  </ul>
-                </td>
-              ),
-              bundler: (
-                <td data-label="bundler">
-                  <a href="https://github.com/rails/webpacker">
-                    <code>rails/webpacker</code>
-                  </a>
-                </td>
+                  </StyledList>
+                </InProgressCell>
               ),
             },
             {
               name: "registrations",
               color: "#46948D",
               icons: (
-                <td
-                  data-label="icons"
-                  style={{ backgroundColor: "#de1920", color: "white" }}
-                >
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
-                    <li>
-                      <code>@planningcenter/icons@1</code>
-                    </li>
-                    <li>
-                      <code>interfaces_icons</code>
-                    </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td data-label="favicon">
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
+                <OutdatedCell data-label="icons">
+                  <StyledList>
+                    {outdatedIconSets.map(lib => (
+                      <li>
+                        <code>{lib}</code>
+                      </li>
+                    ))}
+                  </StyledList>
+                </OutdatedCell>
               ),
               emails: (
-                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      marginBottom: 0,
-                      paddingLeft: "1em",
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="emails">
+                  <StyledList>
                     <li>
                       <a href="https://github.com/ministrycentered/pco-communication">
                         <code>pco-communication@2</code>
                       </a>
                     </li>
                     <li>app-specific</li>
-                  </ul>
-                </td>
+                  </StyledList>
+                </InProgressCell>
               ),
               bundler: (
-                <td
-                  data-label="bundler"
-                  style={{ backgroundColor: "#de1920", color: "white" }}
-                >
-                  <ul
-                    style={{
-                      textAlign: "left",
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                    }}
-                  >
+                <OutdatedCell data-label="bundler">
+                  <StyledList>
                     <li>
                       <a href="https://github.com/rails/webpacker">
                         <code>rails/webpacker</code>
@@ -396,22 +264,16 @@ const IndexPage = () => (
                     <li>
                       <code>sprockets-es6-amd</code>
                     </li>
-                  </ul>
-                </td>
+                  </StyledList>
+                </OutdatedCell>
               ),
             },
             {
               name: "resources",
               color: "#963522",
               icons: (
-                <td data-label="icons" style={{ backgroundColor: "#fff97b" }}>
-                  <ul
-                    style={{
-                      paddingLeft: "1em",
-                      marginBottom: 0,
-                      textAlign: "left",
-                    }}
-                  >
+                <InProgressCell data-label="icons">
+                  <StyledList>
                     <li>
                       <code>
                         <a
@@ -419,34 +281,28 @@ const IndexPage = () => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          @planning-center/icons@2
+                          @planningcenter/icons@2
                         </a>
                       </code>
                     </li>
-                    <li>
-                      <code>@planningcenter/icons@1</code>
-                    </li>
-                    <li>
-                      <code>interfaces_icons</code>
-                    </li>
-                    <li>
-                      <code>IcoMoon iconfont</code>
-                    </li>
-                  </ul>
-                </td>
-              ),
-              favicon: (
-                <td>
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
+                    {outdatedIconSets.map(lib => (
+                      <li>
+                        <code>{lib}</code>
+                      </li>
+                    ))}
+                  </StyledList>
+                </InProgressCell>
               ),
               emails: (
-                <td style={{ backgroundColor: "#de1920", color: "white" }}>
+                <OutdatedCell data-label="emails">
                   <code>app-specific</code>
-                </td>
+                </OutdatedCell>
               ),
+            },
+          ].map(_app => {
+            let app = {
+              name: "",
+              color: "",
               bundler: (
                 <td data-label="bundler">
                   <a href="https://github.com/rails/webpacker">
@@ -454,15 +310,27 @@ const IndexPage = () => (
                   </a>
                 </td>
               ),
-            },
-          ].map(_app => {
-            let app = {
-              name: "",
-              color: "",
-              bundler: <td />,
-              emails: <td />,
-              favicon: <td />,
-              icon: <td />,
+              emails: (
+                <td data-label="emails">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>pco-communication@2</code>
+                  </a>
+                </td>
+              ),
+              favicon: (
+                <td data-label="favicon">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              icon: (
+                <td data-label="favicon">
+                  <a href="https://github.com/planningcenter/icons">
+                    <code>@planningcenter/icons@2</code>
+                  </a>
+                </td>
+              ),
               ..._app,
             };
             return (
