@@ -14,7 +14,10 @@ const IndexPage = () => (
         <thead>
           <tr>
             <td>app</td>
+            <td>bundler</td>
             <td>icons</td>
+            <td>favicon</td>
+            <td>emails</td>
           </tr>
         </thead>
         <tbody>
@@ -44,6 +47,40 @@ const IndexPage = () => (
                       <code>IcoMoon iconfont</code>
                     </li>
                   </ul>
+                </td>
+              ),
+              favicon: (
+                <td data-label="favicon">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
+                  <ul
+                    style={{
+                      paddingLeft: "1em",
+                      marginBottom: 0,
+                      textAlign: "left",
+                    }}
+                  >
+                    <li>
+                      <a href="https://github.com/ministrycentered/pco-communication">
+                        <code>pco-communication@2</code>
+                      </a>
+                    </li>
+
+                    <li>app-specific</li>
+                  </ul>
+                </td>
+              ),
+              bundler: (
+                <td
+                  data-label="bundler"
+                  style={{ backgroundColor: "#de1920", color: "white" }}
+                >
+                  <code>sprockets-es6-amd</code>
                 </td>
               ),
             },
@@ -82,6 +119,39 @@ const IndexPage = () => (
                   </ul>
                 </td>
               ),
+              favicon: (
+                <td data-label="favicon">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
+                  <ul
+                    style={{
+                      paddingLeft: "1em",
+                      marginBottom: 0,
+                      textAlign: "left",
+                    }}
+                  >
+                    <li>
+                      <a href="https://github.com/ministrycentered/pco-communication">
+                        <code>pco-communication@2</code>
+                      </a>
+                    </li>
+
+                    <li>app-specific</li>
+                  </ul>
+                </td>
+              ),
+              bundler: (
+                <td data-label="bundler">
+                  <a href="https://github.com/rails/webpacker">
+                    <code>rails/webpacker</code>
+                  </a>
+                </td>
+              ),
             },
             {
               name: "groups",
@@ -113,6 +183,27 @@ const IndexPage = () => (
                       <code>IcoMoon iconfont</code>
                     </li>
                   </ul>
+                </td>
+              ),
+              favicon: (
+                <td>
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td>
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>pco-communication@2</code>
+                  </a>
+                </td>
+              ),
+              bundler: (
+                <td data-label="bundler">
+                  <a href="https://github.com/rails/webpacker">
+                    <code>rails/webpacker</code>
+                  </a>
                 </td>
               ),
             },
@@ -148,6 +239,27 @@ const IndexPage = () => (
                   </ul>
                 </td>
               ),
+              favicon: (
+                <td>
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td>
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>pco-communication@2</code>
+                  </a>
+                </td>
+              ),
+              bundler: (
+                <td data-label="bundler">
+                  <a href="https://github.com/rails/webpacker">
+                    <code>rails/webpacker</code>
+                  </a>
+                </td>
+              ),
             },
             {
               name: "people",
@@ -178,6 +290,39 @@ const IndexPage = () => (
                   </ul>
                 </td>
               ),
+              favicon: (
+                <td data-labels="favicon">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
+                  <ul
+                    style={{
+                      paddingLeft: "1em",
+                      marginBottom: 0,
+                      textAlign: "left",
+                    }}
+                  >
+                    <li>
+                      <a href="https://github.com/ministrycentered/pco-communication">
+                        <code>pco-communication@2</code>
+                      </a>
+                    </li>
+
+                    <li>app-specific</li>
+                  </ul>
+                </td>
+              ),
+              bundler: (
+                <td data-label="bundler">
+                  <a href="https://github.com/rails/webpacker">
+                    <code>rails/webpacker</code>
+                  </a>
+                </td>
+              ),
             },
             {
               name: "registrations",
@@ -202,6 +347,54 @@ const IndexPage = () => (
                     </li>
                     <li>
                       <code>IcoMoon iconfont</code>
+                    </li>
+                  </ul>
+                </td>
+              ),
+              favicon: (
+                <td data-label="favicon">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td data-label="emails" style={{ backgroundColor: "#fff97b" }}>
+                  <ul
+                    style={{
+                      marginBottom: 0,
+                      paddingLeft: "1em",
+                      textAlign: "left",
+                    }}
+                  >
+                    <li>
+                      <a href="https://github.com/ministrycentered/pco-communication">
+                        <code>pco-communication@2</code>
+                      </a>
+                    </li>
+                    <li>app-specific</li>
+                  </ul>
+                </td>
+              ),
+              bundler: (
+                <td
+                  data-label="bundler"
+                  style={{ backgroundColor: "#de1920", color: "white" }}
+                >
+                  <ul
+                    style={{
+                      textAlign: "left",
+                      paddingLeft: "1em",
+                      marginBottom: 0,
+                    }}
+                  >
+                    <li>
+                      <a href="https://github.com/rails/webpacker">
+                        <code>rails/webpacker</code>
+                      </a>
+                    </li>
+                    <li>
+                      <code>sprockets-es6-amd</code>
                     </li>
                   </ul>
                 </td>
@@ -242,18 +435,51 @@ const IndexPage = () => (
                   </ul>
                 </td>
               ),
+              favicon: (
+                <td>
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
+              ),
+              emails: (
+                <td style={{ backgroundColor: "#de1920", color: "white" }}>
+                  <code>app-specific</code>
+                </td>
+              ),
+              bundler: (
+                <td data-label="bundler">
+                  <a href="https://github.com/rails/webpacker">
+                    <code>rails/webpacker</code>
+                  </a>
+                </td>
+              ),
             },
-          ].map(app => (
-            <tr>
-              <td data-label="app">
-                <Symbol
-                  symbol={`${appsSprite}#${app.name}-app`}
-                  style={{ color: app.color }}
-                />
-              </td>
-              {app.icons}
-            </tr>
-          ))}
+          ].map(_app => {
+            let app = {
+              name: "",
+              color: "",
+              bundler: <td />,
+              emails: <td />,
+              favicon: <td />,
+              icon: <td />,
+              ..._app,
+            };
+            return (
+              <tr>
+                <td data-label="app">
+                  <Symbol
+                    symbol={`${appsSprite}#${app.name}-app`}
+                    style={{ color: app.color }}
+                  />
+                </td>
+                {app.bundler}
+                {app.icons}
+                {app.favicon}
+                {app.emails}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
 
@@ -267,8 +493,6 @@ const IndexPage = () => (
       <strong>Forthcoming topics...</strong>
       <h3>8pt grid system</h3>
       <h3>System font</h3>
-      <h3>Icons v2</h3>
-      <h3>Webpacker</h3>
       <h3>Minions</h3>
       <h3>Font scale</h3>
       <h3>Material breakpoints (simplified)</h3>
