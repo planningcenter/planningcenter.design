@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@planningcenter/icons": "^3.0.0-2",
+    "@planningcenter/symbol": "^2.0.3",
     "gatsby": "next",
     "gatsby-link": "next",
     "gatsby-plugin-react-helmet": "next",

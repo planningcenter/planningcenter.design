@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../components/layouts";
+import appsSprite from "@planningcenter/icons/sprites/apps.svg";
+import Symbol from "@planningcenter/symbol";
 import "table.css";
 
 const IndexPage = () => (
@@ -244,9 +246,10 @@ const IndexPage = () => (
           ].map(app => (
             <tr>
               <td data-label="app">
-                <svg className="symbol" style={{ color: app.color }}>
-                  <use href={`/app-icons.svg#${app.name}-app`} />
-                </svg>
+                <Symbol
+                  symbol={`${appsSprite}#${app.name}-app`}
+                  style={{ color: app.color }}
+                />
               </td>
               {app.icons}
             </tr>
