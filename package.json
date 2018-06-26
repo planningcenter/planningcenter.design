@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@planningcenter/icons": "^3.0.0-2",
     "gatsby": "next",
     "gatsby-link": "next",
     "gatsby-plugin-react-helmet": "next",
@@ -16,7 +17,8 @@
     "prismjs": "^1.13.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "table.css": "0.0.1"
   },
   "keywords": [
     "gatsby"
