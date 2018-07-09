@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layouts";
+import Layout from "../components/main_layout";
 import Helmet from "react-helmet";
 import { ArticleNav } from "../components/article_nav";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layouts";
+import Layout from "../components/main_layout";
 import appsSprite from "@planningcenter/icons/sprites/apps.svg";
 import Symbol from "@planningcenter/symbol";
 import "table.css";
@@ -220,6 +220,13 @@ const IndexPage = () => (
                   </a>
                 </td>
               ),
+              breakpoints: (
+                <td data-label="breakpoints">
+                  <a href="https://github.com/planningcenter/icons">
+                    <code>Material Design (simplified)</code>
+                  </a>
+                </td>
+              ),
               ..._app,
             };
             return (
@@ -234,6 +241,7 @@ const IndexPage = () => (
                 {app.icons}
                 {app.favicon}
                 {app.emails}
+                {app.breakpoints}
               </tr>
             );
           })}
