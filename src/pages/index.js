@@ -91,28 +91,6 @@ const IndexPage = () => (
             {
               name: "check-ins",
               color: "#876096",
-              icons: (
-                <InProgressCell data-label="icons">
-                  <StyledList>
-                    <li>
-                      <code>
-                        <a
-                          href="https://github.com/planningcenter/icons"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          @planningcenter/icons@2
-                        </a>
-                      </code>
-                    </li>
-                    {outdatedIconSets.map(lib => (
-                      <li>
-                        <code>{lib}</code>
-                      </li>
-                    ))}
-                  </StyledList>
-                </InProgressCell>
-              ),
               emails: (
                 <InProgressCell data-label="emails">
                   <StyledList>
@@ -125,6 +103,13 @@ const IndexPage = () => (
                     <li>app-specific</li>
                   </StyledList>
                 </InProgressCell>
+              ),
+              favicon: (
+                <td data-label="favicon">
+                  <a href="https://github.com/ministrycentered/pco-communication">
+                    <code>interfaces@2</code>
+                  </a>
+                </td>
               ),
             },
             {
