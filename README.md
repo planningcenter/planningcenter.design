@@ -1,5 +1,7 @@
 # planningcenter.design
 
+[![CircleCI](https://circleci.com/gh/planningcenter/planningcenter.design.svg?style=svg)](https://circleci.com/gh/planningcenter/planningcenter.design)
+
 ## Develop
 
 ```sh
