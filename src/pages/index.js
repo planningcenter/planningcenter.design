@@ -69,19 +69,6 @@ const IndexPage = () => (
                   </StyledList>
                 </OutdatedCell>
               ),
-              emails: (
-                <InProgressCell data-label="emails">
-                  <StyledList>
-                    <li>
-                      <a href="https://github.com/ministrycentered/pco-communication">
-                        <code>pco-communication@2</code>
-                      </a>
-                    </li>
-
-                    <li>app-specific</li>
-                  </StyledList>
-                </InProgressCell>
-              ),
               bundler: (
                 <OutdatedCell data-label="bundler">
                   <code>sprockets-es6-amd</code>
@@ -91,26 +78,6 @@ const IndexPage = () => (
             {
               name: "check-ins",
               color: "#876096",
-              emails: (
-                <InProgressCell data-label="emails">
-                  <StyledList>
-                    <li>
-                      <a href="https://github.com/ministrycentered/pco-communication">
-                        <code>pco-communication@2</code>
-                      </a>
-                    </li>
-
-                    <li>app-specific</li>
-                  </StyledList>
-                </InProgressCell>
-              ),
-              favicon: (
-                <td data-label="favicon">
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
-                  </a>
-                </td>
-              ),
             },
             {
               name: "groups",
@@ -171,19 +138,6 @@ const IndexPage = () => (
             {
               name: "people",
               color: "#4278e3",
-              emails: (
-                <InProgressCell data-label="emails">
-                  <StyledList>
-                    <li>
-                      <a href="https://github.com/ministrycentered/pco-communication">
-                        <code>pco-communication@2</code>
-                      </a>
-                    </li>
-
-                    <li>app-specific</li>
-                  </StyledList>
-                </InProgressCell>
-              ),
             },
             {
               name: "registrations",
@@ -198,18 +152,6 @@ const IndexPage = () => (
                     ))}
                   </StyledList>
                 </OutdatedCell>
-              ),
-              emails: (
-                <InProgressCell data-label="emails">
-                  <StyledList>
-                    <li>
-                      <a href="https://github.com/ministrycentered/pco-communication">
-                        <code>pco-communication@2</code>
-                      </a>
-                    </li>
-                    <li>app-specific</li>
-                  </StyledList>
-                </InProgressCell>
               ),
               bundler: (
                 <OutdatedCell data-label="bundler">
@@ -276,7 +218,7 @@ const IndexPage = () => (
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      @planningcenter/icons@2
+                      >= @planningcenter/icons@2
                     </a>
                   </code>
                 </td>
@@ -284,14 +226,14 @@ const IndexPage = () => (
               emails: (
                 <td data-label="emails">
                   <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>pco-communication@2</code>
+                    <code>>= pco-communication@1.8.1</code>
                   </a>
                 </td>
               ),
               favicon: (
                 <td data-label="favicon">
-                  <a href="https://github.com/ministrycentered/pco-communication">
-                    <code>interfaces@2</code>
+                  <a href="https://github.com/ministrycentered/interfaces">
+                    <code>>= interfaces@2</code>
                   </a>
                 </td>
               ),
