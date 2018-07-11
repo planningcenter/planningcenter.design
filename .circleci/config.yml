@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9
+    steps:
+      - run:
+          name: Install dependencies
+          working_directory: /
+          command: |
+            sudo apt install python-pip python-dev zip
+            sudo pip install awscli
+            sudo npm install --global gatsby-cli
+
+      - checkout
+
+      - restore_cache:
+          name: Restore Yarn cache
+          key: planningcenter-design-yarn-cache-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Yarn install
+          command: yarn install
+
+      - save_cache:
+          name: Save Yarn cache
+          key: planningcenter-design-yarn-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+
+      - run:
+          name: Gatsby build
+          command: gatsby build
+
+      - deploy:
+          name: Branch dependent deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              echo "Deploying master to planningcenter.design"
+              aws s3 sync public/ s3://planningcenter.design --acl public-read --region us-east-1
+            else
+              echo "Not deploying anything for pushes to the ${CIRCLE_BRANCH} branch"
+            fi
