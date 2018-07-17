@@ -80,7 +80,7 @@ const IndexPage = () => (
               color: "#876096",
             },
             {
-              name: "groups",
+              name: "giving",
               color: "#F4C551",
               icons: (
                 <InProgressCell data-label="icons">
@@ -110,30 +110,6 @@ const IndexPage = () => (
             {
               name: "groups",
               color: "#FB7642",
-              icons: (
-                <InProgressCell data-label="icons">
-                  <StyledList>
-                    <li>
-                      <code>
-                        <a
-                          href="https://github.com/planningcenter/icons"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          @planningcenter/icons@2
-                        </a>
-                      </code>
-                    </li>
-                    {outdatedIconSets
-                      .filter(set => set !== "interfaces_icons")
-                      .map(lib => (
-                        <li>
-                          <code>{lib}</code>
-                        </li>
-                      ))}
-                  </StyledList>
-                </InProgressCell>
-              ),
             },
             {
               name: "people",
