@@ -20,6 +20,20 @@ export default function Template({
           category={rest.location.pathname.split("/")[1]}
         />
         <article className="article">
+          <div style={{ textAlign: "right" }}>
+            <small>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={
+                  "https://github.com/planningcenter/planningcenter.design/tree/master/src" +
+                  markdownRemark.fileAbsolutePath.split("/src")[1]
+                }
+              >
+                Improve this page
+              </a>
+            </small>
+          </div>
           <h1>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </article>
@@ -48,6 +62,7 @@ export const pageQuery = graphql`
         path
         title
       }
+      fileAbsolutePath
     }
   }
 `;
