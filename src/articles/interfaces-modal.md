@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/interfaces-modal"
+path: "/interfaces-modal"
 date: "2015-09-22"
 title: "Interfaces modal"
 ---

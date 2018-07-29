@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/view"
+path: "/view"
 date: "2015-11-25"
 title: "View"
 ---

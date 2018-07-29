@@ -1,56 +1,60 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-// import { StaticQuery, graphql } from "gatsby";
-import PlanningCenterDesignSVGPath from "../images/planning-center-design.svg";
+import { StaticQuery, graphql } from "gatsby";
+import Link from "gatsby-link";
+import "table.css";
 import "@planningcenter/icons/css/symbol.css";
 import "../styles/shared.css";
 import "../styles/prism-ghcolors.css";
 
-const TemplateWrapper = ({ children }) => (
-  <div style={{ display: "flex", minHeight: "100vh", paddingLeft: 70 }}>
-    <Helmet
-      title="Planning Center Design"
-      meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" },
-      ]}
+export default function({ children }) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query LayoutQuery {
+          allMarkdownRemark {
+            edges {
+              node {
+                id
+                frontmatter {
+                  title
+                  path
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr" }}>
+          <Helmet
+            title="Planning Center Design"
+            meta={[
+              { name: "description", content: "Sample" },
+              { name: "keywords", content: "sample, something" },
+            ]}
+          />
+          <div style={{ padding: "3rem" }}>{children}</div>
+          <div style={{ padding: "3rem", backgroundColor: "#f8f8f8" }}>
+            <nav>
+              <ul style={{ listStyle: "none", padding: 0 }}>
+                {data.allMarkdownRemark.edges.map(
+                  ({ node: { id, frontmatter: { path, title } } }) => (
+                    <li
+                      key={id}
+                      style={{ paddingTop: ".25em", paddingBottom: ".25em" }}
+                    >
+                      <Link to={path} activeStyle={{ fontWeight: 800 }}>
+                        {title}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      )}
     />
-    {children}
-    <img
-      src={PlanningCenterDesignSVGPath}
-      className="symbol"
-      style={{ fontSize: "2rem" }}
-      alt="Planning Center Design Icon"
-    />
-  </div>
-);
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-};
-
-export default TemplateWrapper;
-
-// export default ({ children }) => (
-//   <StaticQuery
-//     query= {
-//   graphql`
-//       query LayoutQuery {
-//         site {
-//           siteMetadata {
-//             title
-//           }
-//         }
-//       }
-//     `}
-// render={data => (
-//       <>
-//         <Helmet titleTemplate= {`%s | ${data.site.siteMetadata.title}` } defaultTitle = { data.site.siteMetadata.title } />
-//         <div>
-//           { children }
-//         </div >
-//       </>
-//     )}
-//   />
-// )
+  );
+}

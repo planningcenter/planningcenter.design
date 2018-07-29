@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/bespoke-interfaces"
+path: "/bespoke-interfaces"
 date: "2015-08-17"
 title: "Bespoke interfaces"
 ---

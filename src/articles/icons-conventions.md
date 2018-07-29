@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/icon-conventions"
+path: "/icon-conventions"
 date: "2015-11-18"
 title: "Icon conventions"
 ---

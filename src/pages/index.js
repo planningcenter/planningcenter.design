@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/main_layout";
 import appsSprite from "@planningcenter/icons/sprites/apps.svg";
 import Symbol from "@planningcenter/symbol";
-import "table.css";
 
 function OutdatedCell(props) {
   return (
@@ -40,8 +39,8 @@ let outdatedIconSets = [
 const IndexPage = () => (
   <Layout>
     <style>{`.symbol { font-size: 2rem}`}</style>
-    <div className="article">
-      <h2>Status</h2>
+    <div>
+      <h1 style={{ marginTop: 0 }}>Status</h1>
 
       <table>
         <thead>
@@ -217,13 +216,6 @@ const IndexPage = () => (
                 <td data-label="favicon">
                   <a href="https://github.com/planningcenter/icons">
                     <code>@planningcenter/icons@2</code>
-                  </a>
-                </td>
-              ),
-              breakpoints: (
-                <td data-label="breakpoints">
-                  <a href="https://github.com/planningcenter/icons">
-                    <code>Material Design (simplified)</code>
                   </a>
                 </td>
               ),

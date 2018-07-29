@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/media-list"
+path: "/media-list"
 date: "2015-11-15"
 title: "Media list"
 ---

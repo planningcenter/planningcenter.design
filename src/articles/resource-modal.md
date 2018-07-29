@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/resource-modal"
+path: "/resource-modal"
 date: "2015-08-14"
 title: "Resource Modal"
 ---

@@ -1,5 +1,5 @@
 ---
-path: "/frontend-development/icons"
+path: "/icons"
 date: "2018-05-18"
 title: "Icons"
 ---

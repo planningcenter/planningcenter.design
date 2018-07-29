@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/prompts"
+path: "/prompts"
 date: "2016-08-22"
 title: "Prompts"
 ---

@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/other-modal-thoughts"
+path: "/other-modal-thoughts"
 date: "2014-11-10"
 title: "Other modal thoughts"
 ---

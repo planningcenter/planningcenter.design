@@ -1,5 +1,5 @@
 ---
-path: "/interfaces-and-interactions/announcements-and-notifications-and-alerts-oh-my"
+path: "/announcements-and-notifications-and-alerts-oh-my"
 date: "2018-04-23"
 title: "Announcements and Notifications and Alerts, oh my!"
 ---

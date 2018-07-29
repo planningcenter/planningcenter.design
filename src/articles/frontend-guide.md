@@ -1,5 +1,5 @@
 ---
-path: "/frontend-development/frontend-guide"
+path: "/frontend-guide"
 date: "2016-04-28"
 title: "Frontend Guide"
 ---
