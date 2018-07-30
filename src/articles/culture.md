@@ -7,8 +7,10 @@ title: "Culture"
 ## People
 _current role, by time hire date_
 
+<div class="remark-table">
+
 | person | role |
-| :--- | ---: |
+| :--- | :--- |
 | @shane | Design/Global Design Lead |
 | @will | Global Design | 
 | @chan | Global Design |
@@ -19,6 +21,8 @@ _current role, by time hire date_
 | @allie | Registrations |
 | @angela | People |
 | @josh | Giving |
+
+</div>
 
 
 ## Getting Help

@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import Link from "gatsby-link";
-import "table.css";
+import "../styles/remark-table.css";
 import "@planningcenter/icons/css/symbol.css";
 import "../styles/shared.css";
 import "../styles/prism-ghcolors.css";
