@@ -12,6 +12,7 @@
     "gatsby-plugin-sharp": "next",
     "gatsby-remark-images": "next",
     "gatsby-remark-prismjs": "next",
+    "gatsby-remark-toc": "^1.0.0",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "glamor": "^2.20.40",

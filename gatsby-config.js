@@ -16,6 +16,15 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          // {
+          //   resolve: "gatsby-remark-toc",
+          //   options: {
+          //     header: "Contents", // the custom header text
+          //     include: [
+          //       "src/articles/**/*.md", // an include glob to match against
+          //     ],
+          //   },
+          // },
           `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-images`,
