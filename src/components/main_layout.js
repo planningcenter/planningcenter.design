@@ -34,12 +34,19 @@ export default function({ children }) {
               { name: "keywords", content: "sample, something" },
             ]}
           />
-          <div style={{ padding: "3rem" }}>{children}</div>
+          <div style={{ padding: "3rem" }}>
+            {typeof children === "function" ? children() : children}
+          </div>
           <div style={{ padding: "3rem", backgroundColor: "#f8f8f8" }}>
             <nav>
               <ul style={{ listStyle: "none", padding: 0 }}>
                 {data.allMarkdownRemark.edges.map(
-                  ({ node: { id, frontmatter: { path, title } } }) => (
+                  ({
+                    node: {
+                      id,
+                      frontmatter: { path, title },
+                    },
+                  }) => (
                     <li
                       key={id}
                       style={{ paddingTop: ".25em", paddingBottom: ".25em" }}
