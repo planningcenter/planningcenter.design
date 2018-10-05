@@ -2,6 +2,7 @@
 path: "/flipper"
 date: "2018-10-02"
 title: "Flipper"
+category: "process"
 ---
 
 [Flipper](https://github.com/jnunemaker/flipper) is a database-driven utility for rolling features out to select groups, organizations, and environments.

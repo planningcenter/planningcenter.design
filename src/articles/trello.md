@@ -2,6 +2,7 @@
 path: "/trello"
 date: "2018-10-02"
 title: "Trello"
+category: "process"
 ---
 
 Trello is used to track the development of a feature.  

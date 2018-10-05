@@ -2,6 +2,7 @@
 path: "/icon-conventions"
 date: "2015-11-18"
 title: "Icon conventions"
+category: "interface"
 ---
 
 ### Help Indicators

@@ -2,6 +2,7 @@
 path: "/slack"
 date: "2018-09-08"
 title: "Slack"
+category: "process"
 ---
 
 Slack is for day-to-day conversation and team/topical discussion.

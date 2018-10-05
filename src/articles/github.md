@@ -2,6 +2,7 @@
 path: "/github"
 date: "2018-10-02"
 title: "Github"
+category: "process"
 ---
 
 You know what [Github](https://github.com/) is and what we use it for.  

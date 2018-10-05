@@ -2,6 +2,7 @@
 path: "/api"
 date: "2018-10-02"
 title: "API"
+category: "platform"
 ---
 
 We provide a number of public APIs.  

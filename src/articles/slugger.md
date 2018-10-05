@@ -2,6 +2,7 @@
 path: "/slugger"
 date: "2018-10-02"
 title: "Slugger"
+category: "platform"
 ---
 
 Slugger is a deployment tool by our fabulous Platform team.  

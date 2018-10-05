@@ -2,6 +2,7 @@
 path: "/icons"
 date: "2018-05-18"
 title: "Icons"
+category: "systems"
 ---
 
 You have access to all Planning Center icons through [Planning Center Icons](https://github.com/planningcenter/icons) (Icons).

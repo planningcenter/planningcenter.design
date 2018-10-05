@@ -2,6 +2,7 @@
 path: "/culture"
 date: "2018-08-30"
 title: "Culture"
+category: "company"
 ---
 
 ## People

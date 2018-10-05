@@ -2,6 +2,7 @@
 path: "/view"
 date: "2015-11-25"
 title: "View"
+category: "interface"
 ---
 
 ## What's a view?

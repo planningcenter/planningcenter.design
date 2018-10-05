@@ -2,6 +2,7 @@
 path: "/bespoke-interfaces"
 date: "2015-08-17"
 title: "Bespoke interfaces"
+category: "interface"
 ---
 
 ## Select vs Dropdown

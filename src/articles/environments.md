@@ -2,6 +2,7 @@
 path: "/environments"
 date: "2018-10-02"
 title: "Environments"
+category: "process"
 ---
 
 We have four environment that apps get executed in.  

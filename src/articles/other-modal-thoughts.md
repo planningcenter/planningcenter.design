@@ -2,6 +2,7 @@
 path: "/other-modal-thoughts"
 date: "2014-11-10"
 title: "Other modal thoughts"
+category: "interface"
 ---
 
 **This page covers the current thinking around Modals and where they are going. There is a lot of functionality to consider. This is where that functionality gets explored.**

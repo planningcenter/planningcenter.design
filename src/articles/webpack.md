@@ -2,6 +2,7 @@
 path: "/webpack"
 date: "2018-10-02"
 title: "Webpack"
+category: "platform"
 ---
 
 [Webpack](https://webpack.js.org) is a build tool in JavaScript.  

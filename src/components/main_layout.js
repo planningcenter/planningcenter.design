@@ -19,49 +19,78 @@ export default function({ children }) {
                 frontmatter {
                   title
                   path
+                  category
                 }
               }
             }
           }
         }
       `}
-      render={data => (
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr" }}>
-          <Helmet
-            title="Planning Center Design"
-            meta={[
-              { name: "description", content: "Sample" },
-              { name: "keywords", content: "sample, something" },
-            ]}
-          />
-          <div style={{ padding: "3rem" }}>
-            {typeof children === "function" ? children() : children}
+      render={data => {
+        let categorizedArticles = {};
+
+        data.allMarkdownRemark.edges.forEach(article => {
+          let category = article.node.frontmatter.category || "Other";
+
+          if (!categorizedArticles[category]) {
+            categorizedArticles[category] = [];
+          }
+
+          categorizedArticles[category].push(article);
+        });
+
+        return (
+          <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr" }}>
+            <Helmet
+              title="Planning Center Design"
+              meta={[
+                { name: "description", content: "Sample" },
+                { name: "keywords", content: "sample, something" },
+              ]}
+            />
+            <div style={{ padding: "3rem" }}>
+              {typeof children === "function" ? children() : children}
+            </div>
+            <div style={{ padding: "3rem", backgroundColor: "#f8f8f8" }}>
+              <nav>
+                {Object.entries(categorizedArticles)
+                  .slice()
+                  .sort(([c1], [c2]) => {
+                    if (c1 > c2) return -1;
+                    if (c2 > c1) return 1;
+                    return 0;
+                  })
+                  .map(([category, articles]) => (
+                    <section>
+                      <strong>
+                        {category.charAt(0).toUpperCase() + category.slice(1)}
+                      </strong>
+
+                      <ul style={{ listStyle: "none", padding: 8 }}>
+                        {articles.map(article => (
+                          <li
+                            key={article.node.id}
+                            style={{
+                              paddingTop: ".25em",
+                              paddingBottom: ".25em",
+                            }}
+                          >
+                            <Link
+                              to={article.node.frontmatter.path}
+                              activeStyle={{ fontWeight: 800 }}
+                            >
+                              {article.node.frontmatter.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  ))}
+              </nav>
+            </div>
           </div>
-          <div style={{ padding: "3rem", backgroundColor: "#f8f8f8" }}>
-            <nav>
-              <ul style={{ listStyle: "none", padding: 0 }}>
-                {data.allMarkdownRemark.edges.map(
-                  ({
-                    node: {
-                      id,
-                      frontmatter: { path, title },
-                    },
-                  }) => (
-                    <li
-                      key={id}
-                      style={{ paddingTop: ".25em", paddingBottom: ".25em" }}
-                    >
-                      <Link to={path} activeStyle={{ fontWeight: 800 }}>
-                        {title}
-                      </Link>
-                    </li>
-                  )
-                )}
-              </ul>
-            </nav>
-          </div>
-        </div>
-      )}
+        );
+      }}
     />
   );
 }

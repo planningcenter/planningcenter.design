@@ -2,6 +2,7 @@
 path: "/sprockets"
 date: "2018-10-02"
 title: "Sprockets"
+category: "platform"
 ---
 
 Sprockets is a tool used by the Rails Asset Pipeline to resolve, concatenate, and digest assets.  

@@ -2,6 +2,7 @@
 path: "/circleci"
 date: "2018-10-02"
 title: "circleci"
+category: "process"
 ---
 
 [circleci](https://circleci.com/) is the service we use for [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration).  

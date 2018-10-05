@@ -2,6 +2,7 @@
 path: "/interfaces-modal"
 date: "2015-09-22"
 title: "Interfaces modal"
+category: "systems"
 ---
 
 Let's talk about how modals work in pre-1.0 versions of Interfaces. It's not great but it's what we got. Let's begin...
