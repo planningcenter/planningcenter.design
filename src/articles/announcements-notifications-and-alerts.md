@@ -78,7 +78,7 @@ App Announcements impact all Customers of a single Planning Center app.
 
 **Description**: Confirmation, warning, or error when CRUDing resources.
 
-**Placement**: Directly belowe Topbar _or_ in-layout (for inline/async feedback).
+**Placement**: Directly below Topbar _or_ in-layout (for inline/async feedback).
 
 **Interaction**: User-dismissed _or_ self-dismissing.
 

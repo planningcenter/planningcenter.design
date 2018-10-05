@@ -6,11 +6,10 @@ category: "process"
 ---
 
 We have four environment that apps get executed in.  
-It's important to know where your data comes from and who maintains it.  
+Each handles data in a different way.
 
-One unique thing about planning center is that `staging` runs on `production` data.  
-But the web servers are different.  
-This is critical when developnig features behind [flipper](/flipper) flags and when features require database migrations.  
+Planning Center's `staging` environment runs on `production` data.  
+This is critical knowledge when developing features behind [flipper](/flipper) flags and when features require database migrations.  
 
 ## Development
 * Machine: Your notebook
@@ -18,15 +17,15 @@ This is critical when developnig features behind [flipper](/flipper) flags and w
 * URL Structure: `accounts.pco.dev`  
 
 ## Test
-* Michine: Your notebook and [circleci](/circleci)
+* Machine: Your notebook and [circleci](/circleci)
 * Data: Populated by `seeds`, `fixtures`, and `factories`. Maintained by your team.  
 
 ## Staging
-* Michine: Planning Center Staging Servers
+* Machine: Staging Servers
 * Data: **Production Database**
 * URL Structure: `accounts-staging.planningcenteronline.com`  
 
 ## Production
-* Michine: Planning Center Production Servers
+* Machine: Production Servers
 * Data: **Production Database**
 * URL Structure: `accounts.planningcenteronline.com`  

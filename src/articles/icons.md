@@ -5,19 +5,14 @@ title: "Icons"
 category: "systems"
 ---
 
-You have access to all Planning Center icons through [Planning Center Icons](https://github.com/planningcenter/icons) (Icons).
+All Planning Center icons [live in this repo](https://github.com/planningcenter/icons).  
+It's our central repository for icons.
 
-Icons is a collection the accessible, scaleable, standard SVG icons used my most Planning Center apps.
+View the catalog — by app — in [this directory](https://planningcenter.github.io/icons/).
 
-Distributed as an [NPM package](https://www.npmjs.com/package/@planningcenter/icons), Icons exposes icons as standard SVGs.
-These SVGs can be used, through platform specific loaders, to be used any of our existing app platforms.
+*Icons* is a collection the accessible, scaleable, one-color, SVG icons.  
 
-Checkout the the [Github repo](https://planningcenter.github.io/icons/) for adding and updating icons.
+Distributed as an [NPM package](https://www.npmjs.com/package/@planningcenter/icons), *Icons* exposes icons as standard SVGs.
+These standard SVGs work with all supported platforms.
 
-### Links
-
-Dictionary: https://planningcenter.github.io/icons/
-
-NPM: https://www.npmjs.com/package/@planningcenter/icons
-
-Github: https://github.com/planningcenter/icons
+Checkout the [Github repo](https://planningcenter.github.io/icons/) for instructions on adding and updating icons.

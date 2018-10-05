@@ -1,20 +1,22 @@
 ---
 path: "/interfaces-modal"
 date: "2015-09-22"
-title: "Interfaces modal"
+title: "Interfaces Modal"
 category: "systems"
 ---
 
-Let's talk about how modals work in pre-1.0 versions of Interfaces. It's not great but it's what we got. Let's begin...
+This is how modals work in *Interfaces*.  
+It's not great but it's what we got.  
+Let's begin...
 
 ## The Data-API
 
-The golden path for interacting with Interfaces modals is through the [Data-API](https://github.com/ministrycentered/interfaces/blob/master/app/assets/javascripts/interfaces/data_api.js.coffee). The Data-API is a collection of event listeners and handlers attached to `document`. Nodes with known `data-` attributes will invoke Interfaces behaviors. These are the available `data-` attribute APIs for modals:
+The simple strategy for implementing an *Interfaces Modal* is the [Data-API](https://github.com/ministrycentered/interfaces/blob/master/app/assets/javascripts/interfaces/data_api.js.coffee).  
+Elements with known `data-` prefixed attributes will invoke Interfaces behaviors.  
+These are the available `data-` attribute APIs for modals:
 
-```
-data-modal-url
-data-modal-close
-```
+* [`data-modal-url`](#data-modal-url)
+* [`data-modal-close`](#data-modal-close)
 
 ### `data-modal-url`
 

@@ -5,27 +5,27 @@ title: "Slack"
 category: "process"
 ---
 
-Slack is for day-to-day conversation and team/topical discussion.
+Slack is for day-to-day conversation and team or topical discussions.
 
 Join or ignore any channels you like.  
 But you're expected to be in any of the `#general-` prefixed channels.  
-The expection is `#general-carlsbad`.  
-If you work remotely, join `#remote` (which isn't general prefixed).  
+The expectation is `#general-carlsbad`.  
+If you work remotely, join `#remote` (which isn't general prefixed 🤷‍♂️).  
 
-Mandetory channels are like this spelling rule:
+Mandatory channels are like this spelling rule:
 
-> *i* before *e* except after *c* or when sounded as *ay* as in *neighbor* and *weigh* or words like *weird*, *height*, *foreign*, *caffeiene*, *conterfeight*...
+> *i* before *e* except after *c* or when sounded as *ay* as in *neighbor* and *weigh* or words like *weird*, *height*, *foreign*, *caffeine*, *counterfeit*...
 
-## Mandetory
+## Mandatory
 * `#general` — Company news 📰
 * `#general-announcement` — Legal/policy/personal company news 👩‍⚖️
-* `#general-carlsbad` on `#remote` — Location-specific details 🌎
+* `#general-carlsbad` or `#remote` — Location-specific details 🌎
 
 ## Design
 * `#design` — Open design discussions 👩‍🎨
 * `🔒dreamland` — Secret design discussions 🦄
 
 ## Other
-* `#watercooler` — Nonsense and frivolity.
-* `#health` — A twice daily reminder to move. Also a reminder that everyone in Carlsbad is `afk`.
-* `#retirement` — We like talking about retirement prep and tax coordination.
+* `#watercooler` — Nonsense and frivolity ⛲️
+* `#health` — A twice daily reminder to move. Also a reminder that everyone in Carlsbad is `afk` 🚶‍♀️
+* `#retirement` — Real talk about Retirement and Tax planning 🤑

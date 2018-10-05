@@ -31,12 +31,12 @@ _current role, by time hire date_
 Ask anyone on the Design Team for help.
 Finding your way can be tricky and we want to help you succeed.
 
-If you're afraid of being dispruptive, ask @shane or @chan.
+If you're afraid of being disruptive, ask @shane or @chan.
 Part of their job is to help you feel at home with the tools and systems.
 
 ## Buddy system
 We have a revolving buddy system.
-Every quarter yuo'll be paired with a buddy.
+Every quarter you'll be paired with a buddy.
 They're your best contact to knock around design ideas with.
 
 <div class="remark-table">

@@ -67,22 +67,39 @@ export default function({ children }) {
                       </strong>
 
                       <ul style={{ listStyle: "none", padding: 8 }}>
-                        {articles.map(article => (
-                          <li
-                            key={article.node.id}
-                            style={{
-                              paddingTop: ".25em",
-                              paddingBottom: ".25em",
-                            }}
-                          >
-                            <Link
-                              to={article.node.frontmatter.path}
-                              activeStyle={{ fontWeight: 800 }}
+                        {articles
+                          .slice()
+                          .sort((a1, a2) => {
+                            // this isn't doing shit
+                            // can i do this in a GraphQL Query?
+                            if (
+                              a1.node.frontmatter.title >
+                              a2.node.frontmatter.title
+                            )
+                              return -1;
+                            if (
+                              a1.node.frontmatter.title >
+                              a2.node.frontmatter.title
+                            )
+                              return 1;
+                            return 0;
+                          })
+                          .map(article => (
+                            <li
+                              key={article.node.id}
+                              style={{
+                                paddingTop: ".25em",
+                                paddingBottom: ".25em",
+                              }}
                             >
-                              {article.node.frontmatter.title}
-                            </Link>
-                          </li>
-                        ))}
+                              <Link
+                                to={article.node.frontmatter.path}
+                                activeStyle={{ fontWeight: 800 }}
+                              >
+                                {article.node.frontmatter.title}
+                              </Link>
+                            </li>
+                          ))}
                       </ul>
                     </section>
                   ))}

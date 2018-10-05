@@ -8,4 +8,4 @@ category: "platform"
 Slugger is a deployment tool by our fabulous Platform team.  
 It's responsible for deploying `staging` and `production` branches automatically.  
 
-This best place to observe this is your `#{app-name}-deploys` channel in [Slack](/slack).
+This best place to observe this is magic is in your `#{app-name}-deploys` channel in [Slack](/slack).
