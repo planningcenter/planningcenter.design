@@ -14,7 +14,7 @@ This is critical knowledge when developing features behind [flipper](/flipper) f
 ## Development
 * Machine: Your notebook
 * Data: Managed and maintained by you
-* URL Structure: `accounts.pco.dev`  
+* URL Structure: `accounts.pco.test`  
 
 ## Test
 * Machine: Your notebook and [circleci](/circleci)
