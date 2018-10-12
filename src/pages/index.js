@@ -252,9 +252,9 @@ const IndexPage = () => (
       <ul>
         <li><a href="/8-point-grid">8pt grid system</a></li>
         <li><a href="/responsive-breakpoints">Simplified Material Breakpoints</a></li>
+        <li><a href="/font-scale">Font scale</a></li>
         <li>System font</li>
         <li>Minions</li>
-        <li>Font scale</li>
         <li>
           <code>position: sticky</code>
         </li>
