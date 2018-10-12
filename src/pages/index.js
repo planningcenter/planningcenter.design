@@ -249,19 +249,17 @@ const IndexPage = () => (
         expectations.
       </p>
 
-      <strong>Forthcoming topics...</strong>
-      <h3>8pt grid system</h3>
-      <h3>System font</h3>
-      <h3>Minions</h3>
-      <h3>Font scale</h3>
-      <h3>Material breakpoints (simplified)</h3>
-      <h3>Progressive enancement APIs and how to use them</h3>
-      <h4>
-        <code>position: sticky</code>
-      </h4>
-      <h4>
-        <code>CSS Grid</code>
-      </h4>
+      <ul>
+        <li><a href="/8-point-grid">8pt grid system</a></li>
+        <li><a href="/responsive-breakpoints">Simplified Material Breakpoints</a></li>
+        <li>System font</li>
+        <li>Minions</li>
+        <li>Font scale</li>
+        <li>
+          <code>position: sticky</code>
+        </li>
+        <li>CSS Grid</li>
+      </ul>
     </div>
   </Layout>
 );
