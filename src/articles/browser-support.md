@@ -23,11 +23,11 @@ category: "platform"
 ## Why we support IE11
 
 All of our users are capable of using a modern browser.  
-But he have a high value for not communicating prescriptively with our customers.  
+But he have a high value for not communicating prescriptively with our customers.
 
-As of early 2018, IE11 usage hovered around 3% for all `*.planningcenteronline.com`.  
+As of early 2018, IE11 usage hovered around 3% for all `*.planningcenteronline.com`.
 
-We'll continue to support those users for the forseeable future.  
+We'll continue to support those users for the forseeable future.
 
 ## What does "IE11 support" look like?
 
@@ -43,7 +43,7 @@ And they'll be seeing potentially limited feature sets.
 
 ## Progressive Enhancements
 
-We don't have great strategy yet but here's what we are shooting for.  
+We don't have great strategy yet but here's what we are shooting for.
 
 ### CSS Custom Properties
 
@@ -51,7 +51,7 @@ Most users have a browser that supports CSS Custom Properties.
 https://caniuse.com/#feat=css-variables
 
 New GD tooling will use CSS Custom Properties exclusively for theming.  
-IE11 users will see generic fallback colors.  
+IE11 users will see generic fallback colors.
 
 ### CSS Grid
 
