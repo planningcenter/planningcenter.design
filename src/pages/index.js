@@ -40,6 +40,13 @@ const IndexPage = () => (
   <Layout>
     <style>{`.symbol { font-size: 2rem}`}</style>
     <div>
+      <h1 style={{ marginTop: 0 }}>Goal</h1>
+      <section>
+        <p>Make a cohesive platform for customers through conversation and consensus.</p>
+        <p>We favor standard technologies, to maximize portability and industry knowledge.</p>
+      </section>
+
+
       <h1 style={{ marginTop: 0 }}>Status</h1>
 
       <div className="remark-table">
