@@ -42,10 +42,15 @@ const IndexPage = () => (
     <div>
       <h1 style={{ marginTop: 0 }}>Goal</h1>
       <section>
-        <p>Make a cohesive platform for customers through conversation and consensus.</p>
-        <p>We favor standard technologies, to maximize portability and industry knowledge.</p>
+        <p>
+          Make a cohesive platform for customers through conversation and
+          consensus.
+        </p>
+        <p>
+          We favor standard technologies, to maximize portability and industry
+          knowledge.
+        </p>
       </section>
-
 
       <h1 style={{ marginTop: 0 }}>Status</h1>
 
@@ -125,31 +130,6 @@ const IndexPage = () => (
               {
                 name: "registrations",
                 color: "#46948D",
-                icons: (
-                  <OutdatedCell data-label="icons">
-                    <StyledList>
-                      {outdatedIconSets.map(lib => (
-                        <li>
-                          <code>{lib}</code>
-                        </li>
-                      ))}
-                    </StyledList>
-                  </OutdatedCell>
-                ),
-                bundler: (
-                  <OutdatedCell data-label="bundler">
-                    <StyledList>
-                      <li>
-                        <a href="https://github.com/rails/webpacker">
-                          <code>rails/webpacker</code>
-                        </a>
-                      </li>
-                      <li>
-                        <code>sprockets-es6-amd</code>
-                      </li>
-                    </StyledList>
-                  </OutdatedCell>
-                ),
               },
               {
                 name: "resources",
@@ -257,9 +237,15 @@ const IndexPage = () => (
       </p>
 
       <ul>
-        <li><a href="/8-point-grid">8pt grid system</a></li>
-        <li><a href="/responsive-breakpoints">Simplified Material Breakpoints</a></li>
-        <li><a href="/font-scale">Font scale</a></li>
+        <li>
+          <a href="/8-point-grid">8pt grid system</a>
+        </li>
+        <li>
+          <a href="/responsive-breakpoints">Simplified Material Breakpoints</a>
+        </li>
+        <li>
+          <a href="/font-scale">Font scale</a>
+        </li>
         <li>System font</li>
         <li>Minions</li>
         <li>
