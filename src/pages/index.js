@@ -63,6 +63,7 @@ const IndexPage = () => (
               <td>icons</td>
               <td>favicon</td>
               <td>emails</td>
+              <td>typeface</td>
             </tr>
           </thead>
           <tbody>
@@ -81,15 +82,20 @@ const IndexPage = () => (
                     </StyledList>
                   </OutdatedCell>
                 ),
-                bundler: (
-                  <OutdatedCell data-label="bundler">
-                    <code>sprockets-es6-amd</code>
-                  </OutdatedCell>
+                typeface: (
+                  <InProgressCell data-label="typeface">
+                    <code>Lato</code>
+                  </InProgressCell>
                 ),
               },
               {
                 name: "check-ins",
                 color: "#876096",
+                typeface: (
+                  <InProgressCell data-label="typeface">
+                    <code>Lato</code>
+                  </InProgressCell>
+                ),
               },
               {
                 name: "giving",
@@ -118,6 +124,11 @@ const IndexPage = () => (
                     </StyledList>
                   </InProgressCell>
                 ),
+                typeface: (
+                  <InProgressCell data-label="typeface">
+                    <code>Lato</code>
+                  </InProgressCell>
+                ),
               },
               {
                 name: "groups",
@@ -126,6 +137,11 @@ const IndexPage = () => (
               {
                 name: "people",
                 color: "#4278e3",
+                typeface: (
+                  <InProgressCell data-label="typeface">
+                    <code>Lato</code>
+                  </InProgressCell>
+                ),
               },
               {
                 name: "registrations",
@@ -160,6 +176,11 @@ const IndexPage = () => (
                   <OutdatedCell data-label="emails">
                     <code>app-specific</code>
                   </OutdatedCell>
+                ),
+                typeface: (
+                  <InProgressCell data-label="typeface">
+                    <code>Lato</code>
+                  </InProgressCell>
                 ),
               },
             ].map(_app => {
@@ -200,10 +221,10 @@ const IndexPage = () => (
                     </a>
                   </td>
                 ),
-                icon: (
-                  <td data-label="favicon">
-                    <a href="https://github.com/planningcenter/icons">
-                      <code>@planningcenter/icons@2</code>
+                typeface: (
+                  <td data-label="typeface">
+                    <a href="https://www.npmjs.com/package/system-ui.css">
+                      <code>system</code>
                     </a>
                   </td>
                 ),
@@ -222,6 +243,7 @@ const IndexPage = () => (
                   {app.favicon}
                   {app.emails}
                   {app.breakpoints}
+                  {app.typeface}
                 </tr>
               );
             })}
