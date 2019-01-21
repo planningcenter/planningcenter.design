@@ -91,11 +91,6 @@ const IndexPage = () => (
               {
                 name: "check-ins",
                 color: "#876096",
-                typeface: (
-                  <InProgressCell data-label="typeface">
-                    <code>Lato</code>
-                  </InProgressCell>
-                ),
               },
               {
                 name: "giving",
