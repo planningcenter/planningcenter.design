@@ -82,11 +82,6 @@ const IndexPage = () => (
                     </StyledList>
                   </OutdatedCell>
                 ),
-                typeface: (
-                  <InProgressCell data-label="typeface">
-                    <code>Lato</code>
-                  </InProgressCell>
-                ),
               },
               {
                 name: "check-ins",
@@ -119,11 +114,6 @@ const IndexPage = () => (
                     </StyledList>
                   </InProgressCell>
                 ),
-                typeface: (
-                  <InProgressCell data-label="typeface">
-                    <code>Lato</code>
-                  </InProgressCell>
-                ),
               },
               {
                 name: "groups",
@@ -132,11 +122,6 @@ const IndexPage = () => (
               {
                 name: "people",
                 color: "#4278e3",
-                typeface: (
-                  <InProgressCell data-label="typeface">
-                    <code>Lato</code>
-                  </InProgressCell>
-                ),
               },
               {
                 name: "registrations",
