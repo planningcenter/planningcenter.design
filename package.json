@@ -6,20 +6,20 @@
   "dependencies": {
     "@planningcenter/icons": "^3.0.0-9",
     "@planningcenter/symbol": "^2.0.3",
-    "gatsby": "next",
-    "gatsby-link": "next",
-    "gatsby-plugin-react-helmet": "next",
-    "gatsby-plugin-sharp": "next",
-    "gatsby-remark-images": "next",
-    "gatsby-remark-prismjs": "next",
-    "gatsby-remark-toc": "^1.0.0",
-    "gatsby-source-filesystem": "next",
-    "gatsby-transformer-remark": "next",
+    "gatsby": "^2.7.5",
+    "gatsby-link": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.2",
+    "gatsby-remark-images": "^3.0.14",
+    "gatsby-remark-prismjs": "^3.2.9",
+    "gatsby-remark-toc": "^1.2.0",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-transformer-remark": "^2.3.12",
     "glamor": "^2.20.40",
-    "prismjs": "^1.15.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0"
+    "prismjs": "^1.16.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
   },
   "keywords": [
     "gatsby"
