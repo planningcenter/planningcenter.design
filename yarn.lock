@@ -1130,15 +1130,15 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
-"@planningcenter/icons@^3.0.0-9":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-3.4.0.tgz#6cef993816b7a462267f4519eee525064bac9e59"
-  integrity sha512-ZK6pEBQ95+iqJhDHMnjxeyPXj9eGAyeaS5Lmd23D+d/upC8cwc8SsTnwUegD8+CELlhwEx4ytHxlLeDyuK9t2w==
+"@planningcenter/icons@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-5.2.1.tgz#5e2723e2347352cf40d0797093ccb4f69d623654"
+  integrity sha512-mjV3wJGE5/4+iSY382+r/QaeR0llVvdxVTic/S7FYDt76RXKFTg9bJxChLm8G0yfrQi2S2D35J80ehjRhc/wvQ==
 
-"@planningcenter/symbol@^2.0.3":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@planningcenter/symbol/-/symbol-2.0.14.tgz#601737866dc66579286ea05ec7a7567ce60fb670"
-  integrity sha512-cGY1w61sC8mbIltnr0OTVBlcTvd8NyUD9NZ8wycWj0ygrY9PaclXZspp+uNcxaxYVYUT/pmgVEuHkIjIgC5VRg==
+"@planningcenter/symbol@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@planningcenter/symbol/-/symbol-3.2.3.tgz#8befa23412f23a648d804a542b54bdd552fb8cd0"
+  integrity sha512-tiwLTDJUR8M3ciiUWH1H/qEC9Cn0ptyqo50b0ip6+s7Sio1quTP3oEugEbE6WbNxirxLJbdx1sFrSph1yTG/BA==
 
 "@reach/router@^1.2.1":
   version "1.2.1"
