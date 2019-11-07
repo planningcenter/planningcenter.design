@@ -152,16 +152,6 @@ const IndexPage = () => (
                     </StyledList>
                   </InProgressCell>
                 ),
-                emails: (
-                  <OutdatedCell data-label="emails">
-                    <code>app-specific</code>
-                  </OutdatedCell>
-                ),
-                typeface: (
-                  <InProgressCell data-label="typeface">
-                    <code>Lato</code>
-                  </InProgressCell>
-                ),
               },
             ].map(_app => {
               let app = {
