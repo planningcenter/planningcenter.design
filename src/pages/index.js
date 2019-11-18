@@ -30,12 +30,6 @@ function StyledList({ component: Component = "ul", ...props }) {
   );
 }
 
-let outdatedIconSets = [
-  "@planning-center/icons@1",
-  "interfaces_icons",
-  "IcoMoon iconfont",
-];
-
 const IndexPage = () => (
   <Layout>
     <style>{`.symbol { font-size: 2rem}`}</style>
@@ -74,7 +68,10 @@ const IndexPage = () => (
                 icons: (
                   <OutdatedCell data-label="icons">
                     <StyledList>
-                      {outdatedIconSets.map(lib => (
+                      {[
+                        "@planning-center/icons",
+                        "@planning-center/icons@0.0.3",
+                      ].map(lib => (
                         <li>
                           <code>{lib}</code>
                         </li>
@@ -104,13 +101,11 @@ const IndexPage = () => (
                           </a>
                         </code>
                       </li>
-                      {outdatedIconSets
-                        .filter(set => set !== "interfaces_icons")
-                        .map(lib => (
-                          <li>
-                            <code>{lib}</code>
-                          </li>
-                        ))}
+                      {["IcoMoon iconfont"].map(lib => (
+                        <li>
+                          <code>{lib}</code>
+                        </li>
+                      ))}
                     </StyledList>
                   </InProgressCell>
                 ),
@@ -144,7 +139,7 @@ const IndexPage = () => (
                           </a>
                         </code>
                       </li>
-                      {outdatedIconSets.map(lib => (
+                      {["IcoMoon iconfont"].map(lib => (
                         <li>
                           <code>{lib}</code>
                         </li>
