@@ -13,6 +13,13 @@ Proper nouns include Planning Center product names: Services, Check-Ins, People,
 
 Proper nouns do not include "important nouns": tag, event, donor, label, service, etc.
 
+## Severity
+
+Change violations you notice; don't stress.
+
+> Leave it better than you found it.  
+> — Scout Rule
+
 ## Examples
 
 "Add person"  
