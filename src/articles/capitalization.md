@@ -22,7 +22,7 @@ Proper nouns do not include "important nouns": tag, event, donor, label, service
 "New service type"  
 "Enable Giving"  
 "Unsubscribe from Giving"  
-"Show giving history"
+"Show giving history"  
 "Show history in Giving"
 
 ## References

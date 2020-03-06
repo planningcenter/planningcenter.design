@@ -65,20 +65,6 @@ const IndexPage = () => (
               {
                 name: "accounts",
                 color: "#3B80C6",
-                icons: (
-                  <OutdatedCell data-label="icons">
-                    <StyledList>
-                      {[
-                        "@planning-center/icons",
-                        "@planning-center/icons@0.0.3",
-                      ].map(lib => (
-                        <li>
-                          <code>{lib}</code>
-                        </li>
-                      ))}
-                    </StyledList>
-                  </OutdatedCell>
-                ),
               },
               {
                 name: "check-ins",
@@ -87,28 +73,6 @@ const IndexPage = () => (
               {
                 name: "giving",
                 color: "#F4C551",
-                icons: (
-                  <InProgressCell data-label="icons">
-                    <StyledList>
-                      <li>
-                        <code>
-                          <a
-                            href="https://github.com/planningcenter/icons"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            @planningcenter/icons@2
-                          </a>
-                        </code>
-                      </li>
-                      {["IcoMoon iconfont"].map(lib => (
-                        <li>
-                          <code>{lib}</code>
-                        </li>
-                      ))}
-                    </StyledList>
-                  </InProgressCell>
-                ),
               },
               {
                 name: "groups",
@@ -125,28 +89,6 @@ const IndexPage = () => (
               {
                 name: "resources",
                 color: "#963522",
-                icons: (
-                  <InProgressCell data-label="icons">
-                    <StyledList>
-                      <li>
-                        <code>
-                          <a
-                            href="https://github.com/planningcenter/icons"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            @planningcenter/icons@2
-                          </a>
-                        </code>
-                      </li>
-                      {["IcoMoon iconfont"].map(lib => (
-                        <li>
-                          <code>{lib}</code>
-                        </li>
-                      ))}
-                    </StyledList>
-                  </InProgressCell>
-                ),
               },
             ].map(_app => {
               let app = {
@@ -222,24 +164,6 @@ const IndexPage = () => (
         you'll find the current state of team decisions on cross-app
         expectations.
       </p>
-
-      <ul>
-        <li>
-          <a href="/8-point-grid">8pt grid system</a>
-        </li>
-        <li>
-          <a href="/responsive-breakpoints">Simplified Material Breakpoints</a>
-        </li>
-        <li>
-          <a href="/font-scale">Font scale</a>
-        </li>
-        <li>System font</li>
-        <li>Minions</li>
-        <li>
-          <code>position: sticky</code>
-        </li>
-        <li>CSS Grid</li>
-      </ul>
     </div>
   </Layout>
 );
