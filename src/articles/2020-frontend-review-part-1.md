@@ -103,7 +103,7 @@ They're all available in Basecamp.
 - [Prompt Specification](https://3.basecamp.com/3670704/buckets/4998590/messages/2248307448#__recording_2323750034)
 - [Surface — "Dark Mode"](https://3.basecamp.com/3670704/buckets/13893082/messages/2098133153) — this one is actually the result of a number of in-person conversations we had over Design Summit and Remote Weeks.
 
-In my 7 years at Planning Center, I'm most proud of the growth represented in these conversations. We've learned a lot we got a lot better at it as we went.
+In my 7 years at Planning Center, I'm most proud of the growth represented in these conversations. We've learned a lot and we got a lot better at it as we went.
 
 If you clicked around, you'll notice that Angela started two of those discussions with some killer work she, Travis, and Tim had done in People.
 
