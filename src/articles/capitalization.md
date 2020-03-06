@@ -5,7 +5,7 @@ title: "Capitalization"
 category: "microcopy"
 ---
 
-In user interfaces, prefer sentance case.
+In user interfaces, prefer sentence case.
 
 Capitalize only proper nouns.
 
