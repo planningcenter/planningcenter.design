@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@planningcenter/icons": "^5.2.1",
+    "@planningcenter/icons": "^7.0.0-beta.8",
     "@planningcenter/symbol": "^3.2.3",
     "gatsby": "^2.7.5",
     "gatsby-link": "^2.1.1",

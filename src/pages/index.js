@@ -45,9 +45,8 @@ const IndexPage = () => (
           knowledge.
         </p>
       </section>
-
       <h1 style={{ marginTop: 0 }}>Status</h1>
-
+      <p>This is the status of some suite-wide unifification efforts.</p>
       <div className="remark-table">
         <table>
           <thead>
@@ -58,6 +57,9 @@ const IndexPage = () => (
               <td>favicon</td>
               <td>emails</td>
               <td>typeface</td>
+              <td>rem</td>
+              <td>utility-classes</td>
+              <td>specified components</td>
             </tr>
           </thead>
           <tbody>
@@ -65,30 +67,172 @@ const IndexPage = () => (
               {
                 name: "accounts",
                 color: "#3B80C6",
+                utilityClasses: (
+                  <InProgressCell as="td" data-label="rem">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/chantastic/minions.css">
+                          <code>minions.css</code>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/chantastic/minions_rails">
+                          <code>minions_rails</code>
+                        </a>
+                      </li>
+                    </ul>
+                  </InProgressCell>
+                ),
+              },
+              {
+                name: "calendar",
+                color: "#CC4832",
+                specifiedComponents: <td />,
+                utilityClasses: (
+                  <InProgressCell as="td" data-label="rem">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/ministrycentered/ui-kit">
+                          <code>UI-Kit</code>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/chantastic/minions_rails">
+                          <code>minions_rails</code>
+                        </a>
+                      </li>
+                    </ul>
+                  </InProgressCell>
+                ),
+                rem: (
+                  <OutdatedCell as="td" data-label="rem">
+                    <code>62.5%</code>
+                  </OutdatedCell>
+                ),
               },
               {
                 name: "check-ins",
                 color: "#876096",
+                specifiedComponents: <td />,
+                utilityClasses: (
+                  <InProgressCell as="td" data-label="rem">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/chantastic/minions.css">
+                          <code>minions.css</code>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/chantastic/minions_rails">
+                          <code>minions_rails</code>
+                        </a>
+                      </li>
+                    </ul>
+                  </InProgressCell>
+                ),
+              },
+              {
+                name: "church-center",
+                color: "",
               },
               {
                 name: "giving",
                 color: "#F4C551",
+
+                utilityClasses: (
+                  <InProgressCell as="td" data-label="rem">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/chantastic/minions_rails">
+                          <code>minions_rails</code>
+                        </a>
+                      </li>
+                    </ul>
+                  </InProgressCell>
+                ),
               },
               {
                 name: "groups",
                 color: "#FB7642",
+                utilityClasses: (
+                  <InProgressCell as="td" data-label="rem">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/chantastic/minions_rails">
+                          <code>minions_rails</code>
+                        </a>
+                      </li>
+                    </ul>
+                  </InProgressCell>
+                ),
+              },
+              {
+                name: "publishing",
+                typeface: (
+                  <InProgressCell as="td">
+                    <code>host</code>
+                  </InProgressCell>
+                ),
+                utilityClasses: <td />,
               },
               {
                 name: "people",
                 color: "#4278e3",
+                utilityClasses: (
+                  <InProgressCell as="td" data-label="rem">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/chantastic/minions.css">
+                          <code>minions.css</code>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/chantastic/minions_rails">
+                          <code>minions_rails</code>
+                        </a>
+                      </li>
+                    </ul>
+                  </InProgressCell>
+                ),
               },
               {
                 name: "registrations",
                 color: "#46948D",
               },
               {
-                name: "resources",
-                color: "#963522",
+                name: "services",
+                color: "#659630",
+                icons: (
+                  <InProgressCell as="td" data-label="icons">
+                    <a href="https://github.com/ministrycentered/ui-kit">
+                      <code>UI-Kit</code>
+                    </a>
+                  </InProgressCell>
+                ),
+                typeface: (
+                  <InProgressCell as="td" data-label="icons">
+                    <code>host</code>
+                  </InProgressCell>
+                ),
+                rem: (
+                  <OutdatedCell as="td" data-label="rem">
+                    <code>62.5%</code>
+                  </OutdatedCell>
+                ),
+                specifiedComponents: (
+                  <InProgressCell data-label="specified-components">
+                    <a href="https://github.com/ministrycentered/ui-kit">
+                      <code>UI-Kit</code>
+                    </a>
+                  </InProgressCell>
+                ),
+                utilityClasses: (
+                  <td data-label="utility-classes">
+                    <a href="https://github.com/ministrycentered/ui-kit">
+                      <code>UI-Kit</code>
+                    </a>
+                  </td>
+                ),
               },
             ].map(_app => {
               let app = {
@@ -130,10 +274,29 @@ const IndexPage = () => (
                 ),
                 typeface: (
                   <td data-label="typeface">
-                    <a href="https://www.npmjs.com/package/system-ui.css">
-                      <code>system</code>
+                    <a href="https://www.npmjs.com/package/@planningcenter/typeface">
+                      <code>@planningcenter/typeface</code>
                     </a>
                   </td>
+                ),
+                rem: (
+                  <td data-label="rem">
+                    <code>default</code>
+                  </td>
+                ),
+                utilityClasses: (
+                  <td data-label="rem">
+                    <a href="https://github.com/chantastic/minions.css">
+                      <code>minions.css</code>
+                    </a>
+                  </td>
+                ),
+                specifiedComponents: (
+                  <InProgressCell data-label="rem">
+                    <a href="https://github.com/planningcenter/design/tree/master/planningcenter/components">
+                      <code>@planningcenter/components (partial)</code>
+                    </a>
+                  </InProgressCell>
                 ),
                 ..._app,
               };
@@ -151,13 +314,15 @@ const IndexPage = () => (
                   {app.emails}
                   {app.breakpoints}
                   {app.typeface}
+                  {app.rem}
+                  {app.utilityClasses}
+                  {app.specifiedComponents}
                 </tr>
               );
             })}
           </tbody>
         </table>
       </div>
-
       <h2>Topics</h2>
       <p>
         This page is a living document for Planning Center design systems. Here

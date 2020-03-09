@@ -1130,10 +1130,10 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
-"@planningcenter/icons@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-5.2.1.tgz#5e2723e2347352cf40d0797093ccb4f69d623654"
-  integrity sha512-mjV3wJGE5/4+iSY382+r/QaeR0llVvdxVTic/S7FYDt76RXKFTg9bJxChLm8G0yfrQi2S2D35J80ehjRhc/wvQ==
+"@planningcenter/icons@^7.0.0-beta.8":
+  version "7.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-7.0.0-beta.8.tgz#095ecc11eeacf95bcdf0b28112eaf4398a23678c"
+  integrity sha512-dV/l+9EOVIpUoeE54VP7MrlGMtZpuOc/jsZURmF6YpK3CzkRJ/4KpNsCDXz6vwKQ1q4fyrb99rxErKR/pKWtFg==
 
 "@planningcenter/symbol@^3.2.3":
   version "3.2.3"
