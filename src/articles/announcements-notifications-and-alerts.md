@@ -2,7 +2,7 @@
 path: "/announcements-and-notifications-and-alerts-oh-my"
 date: "2018-04-23"
 title: "Announcements and Notifications and Alerts, oh my!"
-category: "interface"
+category: "taxonomy"
 ---
 
 Do you find it hard to talk about "notifications" without slathering them in adjectives? "app-specific, peer-generated, non-platform notifications."
