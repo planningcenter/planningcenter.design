@@ -6,7 +6,7 @@ category: "taxonomy"
 ---
 
 There are four classifications of "global" settings.  
-This document clarifies the boundaries of each, where those settings are located, and how they accessed.
+This document clarifies the boundaries of each, where those settings are located, and how they are accessed.
 
 **This taxonomy is for administrative products.**
 **It won't translate directly to public facing products like Church Center**
