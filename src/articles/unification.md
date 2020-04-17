@@ -51,10 +51,11 @@ Here are some things to consider:
 - How many technologies does the implementation touch? (CSS, React, Rails, etc.)
 - Are there dependencies that will need to be added?
 - Are there dependencies that will need to be unified? (SweetAlert2, Reach, Rails, React Router, etc.)
-- How much developer effort will it require?
-- How much testing effort will it take require?
+- How much developer effort will the change require?
+- How much testing effort will the change require?
 - Is the migration path incremental? If another project becomes more important, can the effort be halted without needing to be restarted?
 - Can the migration be self-directed by product teams or does it require active management?
+- Who is completion reported to and where is it captured?
 - Do decisions require insight from other teams (Platform, PM)?
 - How should the implementation be versioned to allow clear migration?
 - How should the implementation be versioned to
