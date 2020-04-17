@@ -32,11 +32,13 @@ My (Chan) motto for unification projects is this:
 Having a clear answer to a problem is only the first step in a unification process.
 They biggest challenge is always migrating the product suite.
 
-**Unification efforts that never complete can introduce more costumer confusion the existing icnonsistency they try to replace.**
+**Unification efforts that never complete can introduce more costumer confusion the existing inconsistencies they try to replace.**
 **Count the full cost before starting.**
 
 Here are some things to consider:
 
+- Is the change critical to customer success?
+- What impact will it have on designer/dev workflow?
 - Can I showcase good examples that exist in products today?
 - Are similar outside products using a similar implementation?
 - Does the proposed change replace or extend an existing solutions?
