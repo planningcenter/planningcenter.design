@@ -32,14 +32,14 @@ My (Chan) motto for unification projects is this:
 Having a clear answer to a problem is only the first step in a unification process.
 They biggest challenge is always migrating the product suite.
 
-**Unification efforts that never complete can introduce more costumer confusion than the inconsistency the intend to reduce.**
+**Unification efforts that never complete can introduce more costumer confusion the existing icnonsistency they try to replace.**
 **Count the full cost before starting.**
 
 Here are some things to consider:
 
 - Can I showcase good examples that exist in products today?
-- Are similar outside products using the a similar implementation?
-- Does the proposed change replace or extend existing solutions?
+- Are similar outside products using a similar implementation?
+- Does the proposed change replace or extend an existing solutions?
 - What's the minimum viable change?
 - Is the implementation extensible, if teams need to augment it?
 - Is any part of the implementation already being shared?
