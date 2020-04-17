@@ -61,8 +61,8 @@ Here are some things to consider:
 - What are the hard deadlines?
 - Which future projects are dependent on this change?
 
-These questions pretty represent the — often complex — decision matrix that global unification projects are subject to.
-They're listed here so you don't feel challenged or dismissed when they are asked.
+These questions represent the — often complex — decision matrix that global unification projects are subject to.
+They're listed here so you don't feel unduly challenged or dismissed when they're asked.
 
 It's the job of **Research and Fidelity** to help navigate projects thru this these challenges.
-So, consider them but don't be intimidated by them.
+So, consider the challenges but don't be intimidated by them.
