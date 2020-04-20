@@ -11,9 +11,10 @@ This actually makes the suite stronger and more adaptable.
 We see the process of unification as one of observation and extraction.
 We're looking for projects with a lot of existing examples and solutions.
 
-We aggressively avoid optimistic abstraction.  
-"First and forever" efforts are regularly dismissed.  
-Previous attempts have had a very low success rate.
+We avoid optimistic abstraction and pre-standardization.  
+We like to see a few working examples of a concept or construct first.  
+Eager standardization efforts lead to a "first and forever", which can be quite political and exhausting.  
+Previous attempts at pre-standardization have had a very low (long-term) success rates.
 
 ## Where should I ask about prior art?
 
