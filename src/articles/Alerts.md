@@ -8,17 +8,41 @@ category: "interface"
 Alerts are dialogue pop-ups that bring focused attention to critical actions or provide informational feedback to users.  
 
 ## Types
-* **Confirm (default)** - Uses a primary confirmation button that neither creates or destroys. This could also be considered an "Info" type.
-* **ConfirmCreate** - Selecting the primary button would create data in our tables. 
-* **ConfirmDestroy** - Selecting the primary button would delete data in our tables.
-* **Error** - Provides informational feedback of an error. (No action available).
-* **Success**  - Provides informational feedback of a successful action. (No action available).
+**Confirm (default)** 
+* Uses a primary confirmation button that neither creates or destroys. This could also be considered an "Info" type.
+* Icon: general#info-circle
+* Icon color/ primary button color: blue
+
+
+**ConfirmCreate**
+* Selecting the primary button would create data in our tables. 
+* Icon: general#x-circle
+* Icon color/ primary button color: red
+
+
+**ConfirmDestroy**
+* Selecting the primary button would delete data in our tables.
+* Icon: general#exclamation-triangle
+* Icon color: yellow
+* primary button color: red
+
+
+**Error**
+* Provides informational feedback of an error. (No action available).
+* Icon: general#x-circle
+* Icon color/ primary button color: red
+
+
+**Success**  
+* Provides informational feedback of a successful action. (No action available).
+* Icon: general#x-circle
+* Icon color/ primary button color: red
 
 ## Specifications
 Please refer to [Prompts documentation](https://planningcenter.design/prompts) for the required anatomy and more detailed copy requirements.
 
 
-![Example alert](/images/alert--confirm-confirm.png)
+![Example alert](/images/alert--confirm-create.png)
 
 * Icon: 48px
 * Title: 25px
