@@ -15,6 +15,10 @@ Please refer to [prompts](https://planningcenter.design/prompts) for more detail
 
 ![Example alert with redlines](/images/alert--spacing.png)
 
+**Elements**
+
+![Example alert with redlines](/images/alert--elements.png)
+
 **Text**
 
 - alerts should use the standard system font stack
@@ -25,10 +29,42 @@ Please refer to [prompts](https://planningcenter.design/prompts) for more detail
 
 The overlay that sits behind the modal should be `rgba(0,0,0,0.4)`. This should be what comes with SweetAlert/SweetAlert2 by default. 
 
+**Icons**
+<div style="display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 32px; width: 50%;">
+        <div style="width: 48px;">
+            <img src="/images/icon--x-circle.png" alt="x-circle icon" title="x-circle icon" />
+        </div>
+        <span><strong>Error</strong></span>
+        <span>general#x-circle</span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 32px; width: 50%;">
+        <div style="width: 48px;">
+            <img src="/images/icon--exclamation-triangle.png" alt="x-circle icon" title="x-circle icon" />
+        </div>
+        <span><strong>Warning</strong></span>
+        <span>general#exclamation-triangle</span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 32px; width: 50%;">
+        <div style="width: 48px;">
+            <img src="/images/icon--check-circle.png" alt="x-circle icon" title="x-circle icon" />
+        </div>
+        <span><strong>Success</strong></span>
+        <span>general#check-circle</span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 32px; width: 50%;">
+        <div style="width: 48px;">
+            <img src="/images/icon--info-circle.png" alt="x-circle icon" title="x-circle icon" />
+        </div>
+        <span><strong>Info</strong></span>
+        <span>general#info-circle</span>
+    </div>
+</div>
+
 **Colors**
 
 Each color in the alerts color palette has at least a 3.0 contrast ratio for accessibility. These colors should be used for alerts in all products.
-<div style="display: flex; align-items: center; justify-content: space-between; color: white;">
+<div style="display: flex; align-items: center; color: white;">
     <div style="background-color: #DF3023; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Red</span>
         <span>#DF3023</span>
@@ -46,6 +82,20 @@ Each color in the alerts color palette has at least a 3.0 contrast ratio for acc
         <span>#059CEE</span>
     </div>
 </div>
+<div style="display: flex; align-items: center; color: white;">
+    <div style="background-color: #595959; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+        <span>Headline</span>
+        <span>#595959</span>
+    </div>
+    <div style="background-color: #848484; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+        <span>Body text</span>
+        <span>#848484</span>
+    </div>
+    <div style="background-color: #e0e0e0; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+        <span>Border</span>
+        <span>#e0e0e0</span>
+    </div>
+</div>
 
 <br><hr style="border-color: #eaeaea">
 
@@ -60,56 +110,62 @@ Warning types always use the exclamation-triangle icon because we want users to 
 **Warning (default)** 
 
 - Uses a primary confirmation button that neither creates or destroys.
-- Icon: general#exclamation-triangle
+- Icon: warning
 - Icon color: yellow
 - Primary button color: blue
 
 ![Example warning alert](/images/alert--warning-confirm.png)
-
+<br>
 
 **Warning-Create**
 
 - Selecting the primary button would create data in our tables. 
-- Icon: general#exclamation-triangle
+- Icon: warning
 - Icon color: yellow
 - Primary button color: green
 
 ![Example warning create alert](/images/alert--warning-create.png)
-
-### Informational Types
+<br>
 
 **Warning-Destroy**
 
 - Selecting the primary button would delete data in our tables.
-- Icon: general#exclamation-triangle
+- Icon: warning
 - Icon color: yellow
 - Primary button color: red
 
 ![Example warning destroy alert](/images/alert--warning-destroy.png)
+<br>
 
+### Informational Types
 
 **Error**
 
-- Provides informational feedback of an error. (No action available).
-- Icon: general#x-circle
+- Provides informational feedback of an error.
+- No choice for the user is needed. The primary action is to confirm they read the message.
+- Icon: error
 - Icon color
 - Primary button color: red
 
 ![Example error alert](/images/alert--error.png)
+<br>
 
 **Success**  
 
-- Provides informational feedback of a successful action. (No action available).
-- Icon: general#x-circle
+- Provides informational feedback of a successful action.
+- No choice for the user is needed. The primary action is to confirm they read the message.
+- Icon: success
 - Icon color: green
 - Primary button color: green
 
 ![Example success alert](/images/alert--success.png)
+<br>
 
 **Info**
 
-- Provides informational feedback of a successful action. (No action available).
-- Icon: general#info-circle
+- Provides informational feedback of a successful action.
+- No choice for the user is needed. The primary action is to confirm they read the message.
+- Icon: info
 - Icon color: blue
 - Primary button color: blue
 
