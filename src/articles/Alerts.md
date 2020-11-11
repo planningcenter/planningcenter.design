@@ -5,7 +5,7 @@ title: "Alerts"
 category: "interface"
 ---
 
-Alerts are dialogue pop-ups that bring focused attention to critical actions or provide informational feedback to users. Alert libraries burrently used in our products are SweetAlert and SweetAlert2. You may choose to use these libraries or something else as long as it is configurable to match these specifications.
+Alerts are dialogue pop-ups that bring focused attention to critical actions or provide informational feedback to users. Alert libraries currently used in our products are SweetAlert and SweetAlert2. You may choose to use these libraries or something else as long as it is configurable to match these specifications.
 
 ## Specifications
 
@@ -27,7 +27,7 @@ The overlay that sits behind the modal should be `rgba(0,0,0,0.4)`. This should 
 
 **Colors**
 
-Each color in the alerts color palette has at least a 3.0 contrast ratio for accessibility. These colors should be used for alerts in al products.
+Each color in the alerts color palette has at least a 3.0 contrast ratio for accessibility. These colors should be used for alerts in all products.
 <div style="display: flex; align-items: center; justify-content: space-between; color: white;">
     <div style="background-color: #DF3023; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Red</span>
@@ -55,7 +55,7 @@ Typically, you'll use alerts in two scenarios.
 1. To provide a user with contextual information they need to know before continuing - like a success message
 
 ### Warning Types
-Warning types always use the exclamation-triangle icon becuase we want users to know they need to make an important choice.
+Warning types always use the exclamation-triangle icon because we want users to know they need to make an important choice.
 
 **Warning (default)** 
 
@@ -64,7 +64,7 @@ Warning types always use the exclamation-triangle icon becuase we want users to 
 - Icon color: yellow
 - Primary button color: blue
 
-![Example alert with text styles](/images/alert--warning-confirm.png)
+![Example warning alert](/images/alert--warning-confirm.png)
 
 
 **Warning-Create**
@@ -74,7 +74,7 @@ Warning types always use the exclamation-triangle icon becuase we want users to 
 - Icon color: yellow
 - Primary button color: green
 
-![Example alert with text styles](/images/alert--warning-create.png)
+![Example warning create alert](/images/alert--warning-create.png)
 
 ### Informational Types
 
@@ -85,7 +85,7 @@ Warning types always use the exclamation-triangle icon becuase we want users to 
 - Icon color: yellow
 - Primary button color: red
 
-![Example alert with text styles](/images/alert--warning-destroy.png)
+![Example warning destroy alert](/images/alert--warning-destroy.png)
 
 
 **Error**
@@ -95,7 +95,7 @@ Warning types always use the exclamation-triangle icon becuase we want users to 
 - Icon color
 - Primary button color: red
 
-![Example alert with text styles](/images/alert--error.png)
+![Example error alert](/images/alert--error.png)
 
 **Success**  
 
@@ -104,7 +104,7 @@ Warning types always use the exclamation-triangle icon becuase we want users to 
 - Icon color: green
 - Primary button color: green
 
-![Example alert with text styles](/images/alert--success.png)
+![Example success alert](/images/alert--success.png)
 
 **Info**
 
@@ -113,7 +113,7 @@ Warning types always use the exclamation-triangle icon becuase we want users to 
 - Icon color: blue
 - Primary button color: blue
 
-![Example alert with text styles](/images/alert--info.png)
+![Example info alert](/images/alert--info.png)
 
 <br><hr style="border-color: #eaeaea">
 
