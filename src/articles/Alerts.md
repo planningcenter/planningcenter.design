@@ -9,7 +9,7 @@ Alerts are dialogue pop-ups that bring focused attention to critical actions or 
 
 ## Specifications
 
-Please refer to [prompts](https://planningcenter.design/prompts) for more details on anatomy and copy requirements.
+Please refer to [prompts](https://planningcenter.design/prompts) for more details on anatomy and copy requirements. You may also reference this [Figma project for the source spec graphics](https://www.figma.com/file/V8Ajrhr3jwzatZvkpqNKaK/Alerts?node-id=19%3A138).
 
 **Spacing**
 
