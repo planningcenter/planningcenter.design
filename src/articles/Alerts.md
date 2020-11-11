@@ -91,7 +91,7 @@ Each color in the alerts color palette has at least a 3.0 contrast ratio for acc
         <span>Body text</span>
         <span>#848484</span>
     </div>
-    <div style="background-color: #e0e0e0; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #e0e0e0; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center; color: #595959">
         <span>Border</span>
         <span>#e0e0e0</span>
     </div>
