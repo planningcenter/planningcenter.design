@@ -144,7 +144,7 @@ Warning types always use the exclamation-triangle icon because we want users to 
 - Provides informational feedback of an error.
 - No choice for the user is needed. The primary action is to confirm they read the message.
 - Icon: error
-- Icon color
+- Icon color: red
 - Primary button color: blue
 
 ![Example error alert](/images/alert--error.png)
