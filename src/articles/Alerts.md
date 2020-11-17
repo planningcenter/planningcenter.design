@@ -145,7 +145,7 @@ Warning types always use the exclamation-triangle icon because we want users to 
 - No choice for the user is needed. The primary action is to confirm they read the message.
 - Icon: error
 - Icon color
-- Primary button color: red
+- Primary button color: blue
 
 ![Example error alert](/images/alert--error.png)
 <br>
@@ -156,7 +156,7 @@ Warning types always use the exclamation-triangle icon because we want users to 
 - No choice for the user is needed. The primary action is to confirm they read the message.
 - Icon: success
 - Icon color: green
-- Primary button color: green
+- Primary button color: blue
 
 ![Example success alert](/images/alert--success.png)
 <br>
