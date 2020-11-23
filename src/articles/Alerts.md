@@ -61,37 +61,37 @@ The overlay that sits behind the modal should be `rgba(0,0,0,0.4)`. This should 
     </div>
 </div>
 
-**Colors**
+**Colors - Default**
 
-Each color in the alerts color palette has at least a 3.0 contrast ratio for accessibility. These colors should be used for alerts in all products.
+This palette will be used for both dark and light schemes. Each color in the alerts color palette has at least a 3.0 contrast ratio for accessibility. These colors should be used for alerts in all products.
 <div style="display: flex; align-items: center; color: white;">
-    <div style="background-color: #DF3023; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #E75146; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Red</span>
-        <span>#DF3023</span>
+        <span>#E75146</span>
     </div>
-    <div style="background-color: #FBC02D; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #FBC02D; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Yellow</span>
         <span>#FBC02D</span>
     </div>
-    <div style="background-color: #2AA92F; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #2AA92F; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Green</span>
         <span>#2AA92F</span>
     </div>
-    <div style="background-color: #059CEE; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #059CEE; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Blue</span>
         <span>#059CEE</span>
     </div>
 </div>
 <div style="display: flex; align-items: center; color: white;">
-    <div style="background-color: #595959; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #595959; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Headline</span>
         <span>#595959</span>
     </div>
-    <div style="background-color: #848484; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: #848484; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center;">
         <span>Body text</span>
         <span>#848484</span>
     </div>
-    <div style="background-color: #e0e0e0; width: 120px; padding: 38px 0; display: flex; flex-direction: column; align-items: center; color: #595959">
+    <div style="background-color: #e0e0e0; width: 120px; padding: 28px 0; display: flex; flex-direction: column; align-items: center; color: #595959">
         <span>Border</span>
         <span>#e0e0e0</span>
     </div>
