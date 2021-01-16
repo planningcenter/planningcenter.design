@@ -18,8 +18,6 @@ category: "systems"
 ### Additional weights
 - 500, 600 may be used on a case-by-case basis, especially in smaller titles where 700 may feel too heavy.
 
-
-
 ## Resources
 
 - [Audit Spreadsheet](https://docs.google.com/spreadsheets/d/1WeNL24OXztjXjOGKFXxuVAUyYXDYHef-TAg-AB6AdzA/edit?usp=sharing)
