@@ -6,6 +6,7 @@
 
 ```sh
 cd planningcenter.design
+yarn install
 yarn develop
 ```
 
